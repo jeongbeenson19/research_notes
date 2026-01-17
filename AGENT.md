@@ -34,3 +34,21 @@
 ## 리뷰 기준
 - Treat documentation typos as P1.
 - Flag any mismatch between docs and code as P0.xxs.
+
+## Goal
+- Given a paper title, create:
+  1) an Obsidian paper note (Markdown) in Research/VideoUnderstanding/20_Papers/...
+  2) prerequisite knowledge notes in Research/VideoUnderstanding/05_Prereqs/ (if missing)
+
+## Constraints
+- Never guess unknown metadata. If not found, leave fields empty.
+- Paper note must follow the fixed template:
+  - YAML keys fixed
+  - Main Contribution exactly 3 lines (What/Why/Impact)
+  - Method <= 5 bullets
+  - Assumptions/Limits <= 2 each
+  - Failure Modes <= 3
+
+## Paths
+- Papers: Research/VideoUnderstanding/20_Papers/
+- Prereqs: Research/VideoUnderstanding/05_Prereqs/

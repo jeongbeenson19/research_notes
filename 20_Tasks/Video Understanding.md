@@ -51,7 +51,7 @@ tags: [task, video, understanding, roadmap]
 - 대표 논문
   - VideoBERT (2019): 비디오-텍스트 공동 사전학습
   - MIL-NCE (2020): 비디오-텍스트 대조학습
-  - VideoCLIP (2021): 대규모 비디오-텍스트 정렬
+  - [[CLIP and Vision-Language Alignment|VideoClip]] (2021): 대규모 비디오-텍스트 정렬
   - CLIP4Clip (2021): CLIP 기반 비디오 검색/정렬
 
 ### 8) 비디오 기초 모델과 대규모 사전학습 (2021~)
@@ -71,11 +71,41 @@ tags: [task, video, understanding, roadmap]
 - **멀티모달 정합**: 텍스트/오디오/포즈와의 정렬
 - **평가**: 단순 분류에서 장면/이벤트 이해까지 확장
 
-## 대표 태스크
-- Action Recognition / Action Localization
-- Temporal Action Detection
-- Video Captioning / Video QA
-- Video Retrieval / Video Grounding
+## Main Task
+![[스크린샷 2026-01-16 오후 8.28.09.png]]
+### **Abstract Understanding Tasks**
+---
+#### [[Video Action Recognition|Video Classification & Action Recognition]]
+#### [[Text-Video Retrieval]]
+#### [[Video-to-Text Summarization]]
+#### [[Video Captioning]]
+#### [[Video QA]]
+---
+
+### **Temporal Understanding Tasks**
+---
+#### [[Video Summarization]]
+#### [[Video Highlight Detection]]
+#### [[Temporal Action/Event Localization]]
+#### [[Temporal Action Proposal Generation]]
+#### [[Video Temporal Grounding]]
+#### [[Moment Retrieval]]
+#### [[Generic Event Boundary Detection]]
+#### [[Generic Event Boundary Captioning & Grounding]]
+#### [[Dense Video Captioning]]
+---
+
+### **Spatiotemporal Understanding Tasks**
+----
+#### [[Object Tracking]]
+#### [[Re-Identification]]
+#### [[Video Saliency Detection]]
+#### [[Video Object Segmentation]]
+#### [[Video Instance Segmentation]]
+#### [[Video Object Referring Segmentation]]
+#### [[Spatiotemporal Grounding]]
+
+---
 
 ## 데이터셋 흐름 (요약)
 - 초기: KTH, UCF101, HMDB51

@@ -3,5 +3,6 @@
   "remotely-save",
   "dataview",
   "templater-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-citation-plugin"
 ]

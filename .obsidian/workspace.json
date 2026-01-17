@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Meta/Templates/trend_note.md",
+                "file": "20_Tasks/Video Understanding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trend_note"
+              "title": "Video Understanding"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "i",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "30_Architectures/ObjectDetection/Detection Essential.md",
+                "file": "40_Papers/Video Understanding with Large Language Models - A Survey.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Detection Essential"
+              "title": "Outline of Video Understanding with Large Language Models - A Survey"
             }
           },
           {
@@ -183,44 +182,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "49388a8ea46f8ad9",
+  "active": "aabaaeca23c9717c",
   "lastOpenFiles": [
-    "00_Meta/Templates/paper_note.md",
-    "00_Meta/Templates/trend_note.md",
-    "30_Architectures/Backbones/TimeSformer.md",
-    "00_Meta/Templates/Untitled.md",
-    "60_Library/2025 CVPR - Video Understanding.md",
-    "60_Library/TrendResearch/VideoUnderstanding/90_Inbox",
-    "60_Library/TrendResearch/VideoUnderstanding/40_Synthesis",
-    "60_Library/TrendResearch/VideoUnderstanding/30_Benchmarks",
-    "60_Library/TrendResearch/VideoUnderstanding/20_Papers",
-    "60_Library/TrendResearch/VideoUnderstanding/10_Trends",
-    "60_Library/TrendResearch/VideoUnderstanding/00_MOC",
-    "60_Library/TrendResearch/VideoUnderstanding",
-    "60_Library/TrendResearch",
-    "40_Papers/Simple Baselines for Human Pose Estimation  and Tracking.md",
-    "40_Papers/Sigmoid Loss for Language Image Pre-Training.md",
-    "10_Concepts/Machine_Learning/06_Data_Imbalance/Class Imbalance.md",
-    "50_Implementations/TimeSformer (facebookresearch).md",
-    "AGENT.md",
+    "Re-Idenfication.md",
     "20_Tasks/Video Understanding.md",
-    "30_Architectures/ObjectDetection/Cascade R-CNN.md",
-    "30_Architectures/Backbones/Vision Transformer.md",
-    "10_Concepts/Machine_Learning/03_Architectures/CNN.md",
-    "40_Papers/Towards Universal Soccer Video Understanding.md",
-    "10_Concepts/Computer_Vision/Video Grounding.md",
-    "40_Papers/Towards Universal Soccer Video Understanding.pdf",
-    "40_Papers/Condensing Action Segmentation Datasets via Generative Network Inversion.pdf",
-    "10_Concepts/Machine_Learning/04_Representation_Multimodal/CLIP and Vision-Language Alignment.md",
-    "10_Concepts/Computer_Vision/Concepts/VideoActionRecogniton/Video Action Recognition.md",
-    "10_Concepts/Machine_Learning/07_Training_Strategies/Transfer Learning.md",
-    "10_Concepts/Machine_Learning/07_Training_Strategies/Teacher-Student Architecture.md",
-    "10_Concepts/Machine_Learning/07_Training_Strategies/Knowledge Distillation.md",
-    "10_Concepts/Computer_Vision/Concepts/Dilated Convolution.md",
-    "30_Architectures/PoseEstimation/Simple Baseline.md",
-    "10_Concepts/Computer_Vision/Metrics/Object Keypoint Similarity.md",
-    "60_Library/Seminars/2025.08.08.md",
-    "60_Library/Seminars/2026.01.07.md",
+    "10_Concepts/Computer_Vision/Video Temporal Grounding.md",
+    "스크린샷 2026-01-16 오후 8.31.13.png",
+    "40_Papers/Video Understanding with Large Language Models - A Survey.md",
+    "스크린샷 2026-01-16 오후 8.28.09.png",
+    "Research/VideoUnderstanding/20_Papers/2023_unknownvenue/video-understanding-with-large-language-models-a-survey.md",
+    "40_Papers/1911.03584v2.pdf",
+    "Research/VideoUnderstanding/20_Papers/2023_unknownvenue",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/UnknownYear_unknownvenue_adapting-pre-trained-3d-models-for-point-cloud-video-understanding-via-cross-fra.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/UnknownYear_unknownvenue_adacm-on-understanding-extremely-long-term-video-with-adaptive-cross-modality-me.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2024_computer-vision-and-pattern-recognition_drvideo-document-retrieval-based-long-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_re-thinking-temporal-search-for-long-form-video-understanding.md",
+    "Research/VideoUnderstanding/05_Prereqs/Prereq__evidence-based-evaluation-protocols.md",
+    "Research/VideoUnderstanding/20_Papers/2024_computer-vision-and-pattern-recognition/2024_computer-vision-and-pattern-recognition_drvideo-document-retrieval-based-long-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/video-xl-extra-long-vision-language-model-for-hour-scale-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_ovo-bench-how-far-is-your-video-llms-from-real-world-online-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_egotextvqa-towards-egocentric-scene-text-aware-video-question-answering.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_veu-bench-towards-comprehensive-understanding-of-video-editing.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_mmvu-measuring-expert-level-multi-discipline-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_bolt-boost-large-vision-language-model-without-training-for-long-form-video-unde.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_vited-video-temporal-evidence-distillation.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_bimba-selective-scan-compression-for-long-range-video-question-answering.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_the-devil-is-in-temporal-token-high-quality-video-reasoning-segmentation.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_cross-modal-causal-relation-alignment-for-video-question-grounding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_adaptive-keyframe-sampling-for-long-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_t-re-thinking-temporal-search-for-long-form-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_livecc-learning-video-llm-with-streaming-speech-transcription-at-scale.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_stop-integrated-spatial-temporal-dynamic-prompting-for-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2024_unknownvenue_towards-universal-soccer-video-understanding.md",
+    "Research/VideoUnderstanding/20_Papers/UnknownYear_unknownvenue",
+    "Research/VideoUnderstanding/20_Papers/2025_computer-vision-and-pattern-recognition",
+    "Research/VideoUnderstanding/20_Papers/2024_computer-vision-and-pattern-recognition",
+    "Research/VideoUnderstanding/20_Papers/2025_unknownvenue",
+    "Research/VideoUnderstanding/20_Papers/2024_unknownvenue",
+    "Research/VideoUnderstanding/20_Papers/2025_CVPR",
+    "Research/VideoUnderstanding/20_Papers",
+    "Research/VideoUnderstanding/05_Prereqs",
     "00_Meta/Assets/Images/스크린샷 2025-12-28 오후 5.50.53.png",
     "00_Meta/Assets/Images/스크린샷 2025-12-28 오후 5.51.27.png"
   ]

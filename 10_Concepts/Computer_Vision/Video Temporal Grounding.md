@@ -20,7 +20,7 @@ topics:
   - moment-retrieval
   - temporal-boundary
 ---
-# Video Grounding
+# Video Temporal Grounding
 
 ## 1. 한줄 요약
 - **Video Grounding은 텍스트 질의와 대응되는 비디오 구간(시작/종료 시점)을 찾는 문제**다.
