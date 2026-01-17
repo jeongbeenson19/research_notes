@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20_Tasks/Video Understanding.md",
+                "file": "Text-Video Retrieval.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Video Understanding"
+              "title": "Text-Video Retrieval"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "aabaaeca23c9717c",
   "lastOpenFiles": [
-    "Re-Idenfication.md",
     "20_Tasks/Video Understanding.md",
+    "Text-Video Retrieval.md",
+    "Re-Idenfication.md",
     "10_Concepts/Computer_Vision/Video Temporal Grounding.md",
     "스크린샷 2026-01-16 오후 8.31.13.png",
     "40_Papers/Video Understanding with Large Language Models - A Survey.md",
@@ -213,7 +214,6 @@
     "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_t-re-thinking-temporal-search-for-long-form-video-understanding.md",
     "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_livecc-learning-video-llm-with-streaming-speech-transcription-at-scale.md",
     "Research/VideoUnderstanding/20_Papers/2025_CVPR/2025_unknownvenue_stop-integrated-spatial-temporal-dynamic-prompting-for-video-understanding.md",
-    "Research/VideoUnderstanding/20_Papers/2025_CVPR/2024_unknownvenue_towards-universal-soccer-video-understanding.md",
     "Research/VideoUnderstanding/20_Papers/UnknownYear_unknownvenue",
     "Research/VideoUnderstanding/20_Papers/2025_computer-vision-and-pattern-recognition",
     "Research/VideoUnderstanding/20_Papers/2024_computer-vision-and-pattern-recognition",
