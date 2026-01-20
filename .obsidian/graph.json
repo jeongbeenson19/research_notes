@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "path:20_Tasks/VideoUnderstanding  ",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.3,
+  "nodeSizeMultiplier": 1.21015625,
+  "lineSizeMultiplier": 2.28641764322917,
+  "collapse-forces": false,
+  "centerStrength": 0.27197265625,
+  "repelStrength": 14.2740885416667,
+  "linkStrength": 0.50634765625,
+  "linkDistance": 276,
+  "scale": 0.31681832801180704,
+  "close": true
+}
