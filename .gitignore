@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.DocumentRevisions-V100
+
+# iCloud placeholders
+*.icloud
+*.icloud~*
+
+# Obsidian (cache/state)
+.obsidian
+.codex
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.env
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
