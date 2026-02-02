@@ -1,0 +1,23 @@
+model = "gpt-5.2-codex"
+
+sandbox_mode = "workspace-write"
+
+approval_policy = "on-request"  # 또는 "untrusted" / "never"(위험) 등
+
+[features]
+web_search_request = true
+
+developer_instructions = """
+You are generating research notes for Obsidian.
+Output must be Markdown only.
+When asked to summarize a paper, follow the user's Obsidian template strictly:
+- Include YAML frontmatter with the specified keys.
+- Keep 'Main Contribution' to exactly 3 lines: What / Why / Impact.
+- Method section: max 5 bullets.
+- Assumptions & Limitations: max 2 each.
+- Failure Modes: max 3 bullets.
+Use citations/links only when provided by the user (do not invent URLs or numbers).
+If required fields are unknown, leave them empty strings or empty lists rather than guessing.
+"""
+[features]
+web_search_request = true
