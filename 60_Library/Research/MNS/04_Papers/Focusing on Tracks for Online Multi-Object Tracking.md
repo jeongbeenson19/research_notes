@@ -1,19 +1,28 @@
 ---
-alias: ["TrackTrack"]
+alias:
+  - TrackTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
 status: 🟩 Done
-rating: 5 # 1~5점
+rating: 5
 date: 2026-02-03
-title: "Focusing on Tracks for Online Multi-Object Tracking"
-authors: ["Kyujin Shim", "Kangwook Ko", "Yujin Yang", "Changick Kim"]
+title: Focusing on Tracks for Online Multi-Object Tracking
+authors:
+  - Kyujin Shim
+  - Kangwook Ko
+  - Yujin Yang
+  - Changick Kim
 year: 2025
-venue: "CVPR"
-paper_url: "https://arxiv.org/abs/2510.13235"
-topics: ["Multi-Object Tracking", "Data Association", "Track Initialization", "Computer Vision"]
+venue: CVPR
+paper_url: https://ieeexplore.ieee.org/document/11093278
+topics:
+  - Multi-Object Tracking
+  - Data Association
+  - Track Initialization
+  - Computer Vision
 ---
 
 ## **📄 Focusing on Tracks for Online Multi-Object Tracking 개요**
