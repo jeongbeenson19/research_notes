@@ -1,5 +1,6 @@
 ---
-aliases: ["Hybrid-SORT"]
+aliases:
+  - Hybrid-SORT
 type: paper
 tags:
   - DeepLearning
@@ -10,11 +11,21 @@ status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "Hybrid-SORT: Weak Cues Matter for Online Multi-Object Tracking"
-authors: ["Mingzhan Yang", "Guangxin Han", "Bin Yan", "Wenhua Zhang", "Jinqing Qi", "Huchuan Lu", "Dong Wang"]
+authors:
+  - Mingzhan Yang
+  - Guangxin Han
+  - Bin Yan
+  - Wenhua Zhang
+  - Jinqing Qi
+  - Huchuan Lu
+  - Dong Wang
 year: 2024
-venue: "AAAI Conference on Artificial Intelligence"
-paper_url: https://arxiv.org/abs/2406.13271
-topics: ["Multi-Object Tracking", "Weak Cues", "Online Tracking"]
+venue: AAAI Conference on Artificial Intelligence
+paper_url: https://arxiv.org/abs/2308.00783
+topics:
+  - Multi-Object Tracking
+  - Weak Cues
+  - Online Tracking
 ---
 
 ## **📄 Hybrid-SORT: Weak Cues Matter for Online Multi-Object Tracking 개요**

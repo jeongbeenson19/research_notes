@@ -1,5 +1,6 @@
 ---
-alias: ["TrackFlow"]
+alias:
+  - TrackFlow
 type: paper
 tags:
   - DeepLearning
@@ -8,11 +9,21 @@ status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "TrackFlow: Multi-Object Tracking with Normalizing Flows"
-authors: ["Gianluca Mancusi", "Aniello Panariello", "Angelo Porrello", "Matteo Fabbri", "Simone Calderara", "Rita Cucchiara"]
+authors:
+  - Gianluca Mancusi
+  - Aniello Panariello
+  - Angelo Porrello
+  - Matteo Fabbri
+  - Simone Calderara
+  - Rita Cucchiara
 year: 2023
-venue: "ICCV"
-paper_url: "https://arxiv.org/abs/2308.11402"
-topics: ["Multi-Object Tracking", "Normalizing Flows", "Probabilistic Fusion", "Computer Vision"]
+venue: ICCV
+paper_url: https://arxiv.org/abs/2308.11513
+topics:
+  - Multi-Object Tracking
+  - Normalizing Flows
+  - Probabilistic Fusion
+  - Computer Vision
 ---
 
 ## **📄 TrackFlow: Multi-Object Tracking with Normalizing Flows 개요**
