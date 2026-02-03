@@ -1,5 +1,6 @@
 ---
-alias: ["MFTIQ"]
+alias:
+  - MFTIQ
 type: paper
 tags:
   - DeepLearning
@@ -8,11 +9,19 @@ status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "MFTIQ: Multi-Flow Tracker with Independent Matching Quality Estimation"
-authors: ["Jonáš Šerých", "Michal Neoral", "Jiří Matas"]
+authors:
+  - Jonáš Šerých
+  - Michal Neoral
+  - Jiří Matas
 year: 2024
-venue: "WACV 2025 (Accepted)"
-paper_url: "https://arxiv.org/abs/2411.08900" # Placeholder, actual arXiv link needs to be confirmed.
-topics: ["Visual Tracking", "Optical Flow", "Long-term Tracking", "Correspondence Quality Estimation", "Deep Learning"]
+venue: WACV 2025 (Accepted)
+paper_url: https://arxiv.org/abs/2411.09511
+topics:
+  - Visual Tracking
+  - Optical Flow
+  - Long-term Tracking
+  - Correspondence Quality Estimation
+  - Deep Learning
 ---
 
 ## **📄 MFTIQ: Multi-Flow Tracker with Independent Matching Quality Estimation 개요**
