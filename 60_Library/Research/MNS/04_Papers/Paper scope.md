@@ -1,12 +1,5 @@
 
 ## **A. Out-of-view / Long-gap / Reactivation**
-
-- Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking
-    
-- MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking
-    
-- MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking
-    
 - Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification
     
 - MOTRv2: Bootstrapping End-to-End Multi-Object Tracking by Pretrained Object Detectors

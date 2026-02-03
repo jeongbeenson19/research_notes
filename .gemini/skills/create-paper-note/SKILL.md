@@ -1,11 +1,11 @@
 ---
 name: create-paper-note
-description: MNS(Workflow).md'에 정의된 템플릿에 따라, 논문 제목을 입력받아 '40_Papers' 디렉토리에 요약 노트를 생성합니다.
+description: MNS(Workflow).md'에 정의된 템플릿에 따라, 논문 제목을 입력받아 '60_Library/Research/MNS/04_Papers' 디렉토리에 요약 노트를 생성합니다.
 ---
 
 # Paper Note Creation Skill
 
-This skill automates the creation of a new paper summary note in the `40_Papers/` directory, based on the template found in `60_Library/Research/MNS/MNS(Workflow).md`.
+This skill automates the creation of a new paper summary note in the `60_Library/Research/MNS/04_Papers/` directory, based on the template found in `60_Library/Research/MNS/MNS(Workflow).md`.
 
 ## Workflow
 
