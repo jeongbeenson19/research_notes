@@ -21,7 +21,7 @@ topics: ["Multi-Object Tracking", "Kalman Filter", "Occlusion Handling", "Non-li
 
 - **발표 논문**: Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking by Jinkun Cao et al., arXiv 2022.
 - **핵심 아이디어**:
-    기존 [[Kalman Filter (KF)]] 기반의 [[Multi-Object Tracking (MOT)]] 방법론인 [[SORT]]의 한계점(선형 운동 가정, 추정 중심적 접근, 오차 누적)을 해결하기 위해 "관측 중심(observation-centric)" 접근 방식을 제안한다. [1, 2, 4, 6] 특히, 폐색(occlusion) 및 비선형 움직임(non-linear motion) 상황에서 추적의 강건성(robustness)을 향상시키는 데 중점을 둔다. [1, 2, 6] 이를 위해 [[Observation-centric Re-Update (ORU)]]와 [[Observation-Centric Momentum (OCM)]]이라는 두 가지 주요 혁신 기법을 도입한다. [2, 3, 6]
+    기존 [[Kalman Filter (KF)]] 기반의 [[Multi-Object Tracking (MOT)]] 방법론인 [[SORT]]의 한계점(선형 운동 가정, 추정 중심적 접근, 오차 누적)을 해결하기 위해 "관측 중심(observation-centric)" 접근 방식을 제안한다. 특히, 폐색(occlusion) 및 비선형 움직임(non-linear motion) 상황에서 추적의 강건성(robustness)을 향상시키는 데 중점을 둔다. 이를 위해 [[Observation-centric Re-Update (ORU)]]와 [[Observation-Centric Momentum (OCM)]]이라는 두 가지 주요 혁신 기법을 도입한다.
 - **주요 성과**:
     - 기존 [[SORT]]의 "Simple, Online, Real-Time" 특성을 유지한다. [1, 2, 6]
     - 단일 CPU에서 700+ FPS (초당 프레임 수) 이상의 빠른 속도로 동작한다. [1, 4, 6]
@@ -109,8 +109,8 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 ---
 
 ## **⚠️ 한계**
-- 기존 [[SORT]]의 세 가지 주요 한계점을 지적하고 개선한다: 상태 추정 노이즈에 대한 민감성, 시간 경과에 따른 오차 누적, 그리고 추정 중심적(estimation-centric)이라는 점. [2, 5, 6]
-- [[Kalman Filter]] 기반의 MOT 방법론들이 일반적으로 객체가 선형으로 움직인다는 가정을 한다는 점이 장기 폐색 시 부정확한 추정으로 이어질 수 있다. [1, 6]
+- 기존 [[SORT]]의 세 가지 주요 한계점을 지적하고 개선한다: 상태 추정 노이즈에 대한 민감성, 시간 경과에 따른 오차 누적, 그리고 추정 중심적(estimation-centric)이라는 점.
+- [[Kalman Filter]] 기반의 MOT 방법론들이 일반적으로 객체가 선형으로 움직인다는 가정을 한다는 점이 장기 폐색 시 부정확한 추정으로 이어질 수 있다.
 
 ---
 
