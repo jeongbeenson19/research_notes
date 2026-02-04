@@ -5,6 +5,7 @@ type: paper
 tags:
   - DeepLearning
   - Paper
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03

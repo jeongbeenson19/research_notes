@@ -1,20 +1,33 @@
 ---
-aliases: ["UCMCTrack"]
+aliases:
+  - UCMCTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
   - CameraMotionCompensation
+  - ViewShift
 status: 🟩 Done
 rating: 0
 date: 2026-02-03
 title: "UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation"
-authors: ["Kefu Yi", "Kai Luo", "Xiaolei Luo", "Jiangui Huang", "Hao Wu", "Rongdong Hu", "Wei Hao"]
+authors:
+  - Kefu Yi
+  - Kai Luo
+  - Xiaolei Luo
+  - Jiangui Huang
+  - Hao Wu
+  - Rongdong Hu
+  - Wei Hao
 year: 2024
-venue: "AAAI"
-paper_url: "https://arxiv.org/abs/2312.08952"
-topics: ["Multi-Object Tracking (MOT)", "Camera Motion Compensation (CMC)", "Motion Model", "Kalman Filter"]
+venue: AAAI
+paper_url: https://arxiv.org/abs/2312.08952
+topics:
+  - Multi-Object Tracking (MOT)
+  - Camera Motion Compensation (CMC)
+  - Motion Model
+  - Kalman Filter
 ---
 
 ## **📄 UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation 개요**

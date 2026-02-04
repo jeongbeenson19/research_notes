@@ -1,18 +1,27 @@
 ---
-aliases: ["MOTIP"]
+aliases:
+  - MOTIP
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - Long-gap
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Multiple Object Tracking as ID Prediction"
-authors: ["Ruopeng Gao", "Yijun Zhang", "Limin Wang"]
+title: Multiple Object Tracking as ID Prediction
+authors:
+  - Ruopeng Gao
+  - Yijun Zhang
+  - Limin Wang
 year: 2025
-venue: "CVPR"
-paper_url: "https://arxiv.org/abs/2403.16848"
-topics: ["Multiple Object Tracking", "ID Prediction", "Computer Vision", "Deep Learning"]
+venue: CVPR
+paper_url: https://arxiv.org/abs/2403.16848
+topics:
+  - Multiple Object Tracking
+  - ID Prediction
+  - Computer Vision
+  - Deep Learning
 ---
 
 ## **📄 Multiple Object Tracking as ID Prediction 개요**

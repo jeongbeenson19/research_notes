@@ -1,20 +1,29 @@
 ---
-alias: ["BoostTrack"]
+alias:
+  - BoostTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultipleObjectTracking
   - MOT
+  - Long-gap
+  - OTnContext
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "BoostTrack: Boosting the Similarity Measure and Detection Confidence for Improved Multiple Object Tracking"
-authors: ["V.D. Stanojevic", "B.T. Todorovic"]
+authors:
+  - V.D. Stanojevic
+  - B.T. Todorovic
 year: 2024
-venue: "Machine Vision and Applications, Vol. 35, p. 53"
-paper_url: https://arxiv.org/abs/2408.13003 # Note: This link is for BoostTrack++, an improved version. The original BoostTrack was published in Machine Vision and Applications.
-topics: ["Multiple Object Tracking (MOT)", "Detection Confidence", "Similarity Measure", "Deep Learning"]
+venue: Machine Vision and Applications, Vol. 35, p. 53
+paper_url: https://arxiv.org/abs/2408.13003
+topics:
+  - Multiple Object Tracking (MOT)
+  - Detection Confidence
+  - Similarity Measure
+  - Deep Learning
 ---
 
 ## **📄 BoostTrack 개요**

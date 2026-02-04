@@ -1,18 +1,26 @@
 ---
-alias: ["U2MOT"]
+alias:
+  - U2MOT
 type: paper
 tags:
   - DeepLearning
   - Paper
-status: 🟩 Done
+  - OTnContext
+status: 🟧 Reading
 rating: 4
 date: 2023-07-28
-title: "Uncertainty-aware Unsupervised Multi-Object Tracking"
-authors: ["Kai Liu", "Sheng Jin"]
+title: Uncertainty-aware Unsupervised Multi-Object Tracking
+authors:
+  - Kai Liu
+  - Sheng Jin
 year: 2023
-venue: "ICCV"
-paper_url: "https://arxiv.org/abs/2307.15409"
-topics: ["Multi-Object Tracking", "Unsupervised Learning", "Uncertainty Estimation", "Deep Learning"]
+venue: ICCV
+paper_url: https://arxiv.org/abs/2307.15409
+topics:
+  - Multi-Object Tracking
+  - Unsupervised Learning
+  - Uncertainty Estimation
+  - Deep Learning
 ---
 
 ## **📄 Uncertainty-aware Unsupervised Multi-Object Tracking 개요**

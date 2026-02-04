@@ -1,20 +1,28 @@
 ---
-aliases: ["CAMOT"]
+aliases:
+  - CAMOT
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
   - CameraAngle
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2024-09-26
 title: "CAMOT: Camera Angle-aware Multi-Object Tracking"
-authors: ["Felix Limanta", "Kuniaki Uto", "Koichi Shinoda"]
+authors:
+  - Felix Limanta
+  - Kuniaki Uto
+  - Koichi Shinoda
 year: 2024
-venue: "WACV"
+venue: WACV
 paper_url: https://arxiv.org/abs/2409.17533
-topics: ["Multi-Object Tracking", "Camera Angle Estimation", "Depth Estimation"]
+topics:
+  - Multi-Object Tracking
+  - Camera Angle Estimation
+  - Depth Estimation
 ---
 
 ## **📄 CAMOT: Camera Angle-aware Multi-Object Tracking 개요**

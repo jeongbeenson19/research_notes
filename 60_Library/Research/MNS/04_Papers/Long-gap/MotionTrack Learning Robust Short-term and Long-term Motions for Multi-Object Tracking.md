@@ -1,18 +1,29 @@
 ---
-aliases: ["MotionTrack"]
+aliases:
+  - MotionTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - Long-gap
 status: 🟩 Done
 rating: 5
 date: 2026-02-03
 title: "MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking"
-authors: ["Zheng Qin", "S. Zhou", "L. Wang", "J. Duan", "G. Hua", "W. Tang"]
+authors:
+  - Zheng Qin
+  - S. Zhou
+  - L. Wang
+  - J. Duan
+  - G. Hua
+  - W. Tang
 year: 2023
-venue: "CVPR"
+venue: CVPR
 paper_url: https://arxiv.org/abs/2303.10404
-topics: ["Multi-Object Tracking", "Motion Learning", "Deep Learning"]
+topics:
+  - Multi-Object Tracking
+  - Motion Learning
+  - Deep Learning
 ---
 
 ## **📄 MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking 개요**

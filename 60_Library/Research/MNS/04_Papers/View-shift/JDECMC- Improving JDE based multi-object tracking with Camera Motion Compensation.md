@@ -1,20 +1,26 @@
 ---
-aliases: ["JDECMC"]
+aliases:
+  - JDECMC
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
   - CameraMotionCompensation
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2024-03-01
 title: "JDECMC: Improving JDE based multi-object tracking with Camera Motion Compensation"
-authors: ["Melikamu Liyih Sinishaw et al."]
+authors:
+  - Melikamu Liyih Sinishaw et al.
 year: 2024
-venue: "Preprint (ResearchGate)"
+venue: Preprint (ResearchGate)
 paper_url: https://www.researchgate.net/publication/378700000_JDECMC_Improving_JDE_based_multi-object_tracking_with_Camera_Motion_Compensation
-topics: ["Multi-Object Tracking", "Joint Detection and Embedding", "Camera Motion Compensation"]
+topics:
+  - Multi-Object Tracking
+  - Joint Detection and Embedding
+  - Camera Motion Compensation
 ---
 
 ## **📄 JDECMC: Improving JDE based multi-object tracking with Camera Motion Compensation 개요**

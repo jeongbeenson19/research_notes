@@ -1,20 +1,27 @@
 ---
-aliases: ["EscapeTrack"]
+aliases:
+  - EscapeTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
   - CameraParameters
-status: "🟧 Reading"
+  - ViewShift
+status: 🟧 Reading
 rating: 0
-date: "2026-02-03"
+date: 2026-02-03
 title: "EscapeTrack: Multi-object tracking with estimated camera parameters"
-authors: ["Kefu Yi", "외 다수"]
+authors:
+  - Kefu Yi
+  - 외 다수
 year: 2025
-venue: "ResearchGate (arXiv 링크 미발견)"
-paper_url: "https://www.researchgate.net/publication/380000000_EscapeTrack_Multi-object_tracking_with_estimated_camera_parameters"
-topics: ["Multi-Object Tracking", "Camera Parameter Estimation", "Real-time Tracking"]
+venue: ResearchGate (arXiv 링크 미발견)
+paper_url: https://www.researchgate.net/publication/380000000_EscapeTrack_Multi-object_tracking_with_estimated_camera_parameters
+topics:
+  - Multi-Object Tracking
+  - Camera Parameter Estimation
+  - Real-time Tracking
 ---
 
 ## **📄 EscapeTrack: Multi-object tracking with estimated camera parameters 개요**

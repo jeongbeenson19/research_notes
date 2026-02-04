@@ -1,5 +1,6 @@
 ---
-aliases: ["IMM-JHSE"]
+aliases:
+  - IMM-JHSE
 type: paper
 tags:
   - DeepLearning
@@ -7,15 +8,23 @@ tags:
   - MultiObjectTracking
   - Homography
   - IMM
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "One Homography is All You Need: IMM-based Joint Homography and Multiple Object State Estimation"
-authors: ["Paul Johannes Claasen", "Johan Pieter de Villiers"]
+authors:
+  - Paul Johannes Claasen
+  - Johan Pieter de Villiers
 year: 2024
-venue: "Expert Systems with Applications"
+venue: Expert Systems with Applications
 paper_url: https://arxiv.org/abs/2409.02562
-topics: ["Multi-Object Tracking", "Homography Estimation", "Interacting Multiple Model (IMM)", "State Estimation", "Computer Vision"]
+topics:
+  - Multi-Object Tracking
+  - Homography Estimation
+  - Interacting Multiple Model (IMM)
+  - State Estimation
+  - Computer Vision
 ---
 
 ## **📄 One Homography is All You Need: IMM-based Joint Homography and Multiple Object State Estimation 개요**

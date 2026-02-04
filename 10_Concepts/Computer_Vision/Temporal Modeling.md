@@ -28,7 +28,7 @@
 
 4.  **Transformer-based Models**:
     - 최근 가장 활발히 연구되는 접근 방식으로, 어텐션(Attention) 메커니즘을 사용합니다.
-    - 시퀀스 내의 모든 프레임 쌍 간의 관계를 직접 계산하므로, RNN의 장기 의존성 문제(long-term dependency problem)를 해결하고 더 길고 복잡한 시간적 패턴을 학습하는 데 유리합니다. (예: TimeSformer, [[Long Short-Term Transformer for Online Action Detection|LSTR]])
+    - 시퀀스 내의 모든 프레임 쌍 간의 관계를 직접 계산하므로, RNN의 장기 의존성 문제(long-term dependency problem)를 해결하고 더 길고 복잡한 시간적 패턴을 학습하는 데 유리합니다. (예: TimeSformer, [[40_Papers/Long Short-Term Transformer for Online Action Detection|LSTR]])
 
 ## 응용 분야
 

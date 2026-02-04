@@ -1,18 +1,31 @@
 ---
-aliases: ["TAM", "Track Anything"]
+aliases:
+  - TAM
+  - Track Anything
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2023-04-28
 title: "Track Anything: Segment Anything Meets Videos"
-authors: ["Jinyu Yang", "Mingqi Gao", "Zhe Li", "Shang Gao", "Fangjing Wang", "Feng Zheng"]
+authors:
+  - Jinyu Yang
+  - Mingqi Gao
+  - Zhe Li
+  - Shang Gao
+  - Fangjing Wang
+  - Feng Zheng
 year: 2023
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2304.11968
-topics: ["Video Object Segmentation", "Video Object Tracking", "Interactive Segmentation", "Foundation Models"]
+topics:
+  - Video Object Segmentation
+  - Video Object Tracking
+  - Interactive Segmentation
+  - Foundation Models
 ---
 
 ## **📄 Track Anything: Segment Anything Meets Videos 개요**

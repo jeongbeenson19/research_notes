@@ -1,19 +1,27 @@
 ---
-alias: ["MOTRv2"]
+alias:
+  - MOTRv2
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
+  - Long-gap
 status: 🟩 Done
 rating: 0
 date: 2026-02-03
 title: "MOTRv2: Bootstrapping End-to-End Multi-Object Tracking by Pretrained Object Detectors"
-authors: ["Yuang Zhang", "Tiancai Wang", "Xiangyu Zhang"]
+authors:
+  - Yuang Zhang
+  - Tiancai Wang
+  - Xiangyu Zhang
 year: 2022
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2211.09791
-topics: ["End-to-End Multi-Object Tracking", "Object Detection", "Transformer"]
+topics:
+  - End-to-End Multi-Object Tracking
+  - Object Detection
+  - Transformer
 ---
 
 ## **📄 MOTRv2: Bootstrapping End-to-End Multi-Object Tracking by Pretrained Object Detectors 개요**

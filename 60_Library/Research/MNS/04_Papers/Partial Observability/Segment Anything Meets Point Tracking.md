@@ -1,20 +1,34 @@
 ---
-alias: ["SAM-PT", "Segment Anything Meets Point Tracking"]
+alias:
+  - SAM-PT
+  - Segment Anything Meets Point Tracking
 type: paper
 tags:
   - DeepLearning
   - Paper
   - VideoSegmentation
   - ZeroShot
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Segment Anything Meets Point Tracking"
-authors: ["Frano Rajič", "Lei Ke", "Yu-Wing Tai", "Chi-Keung Tang", "Martin Danelljan", "Fisher Yu"]
+title: Segment Anything Meets Point Tracking
+authors:
+  - Frano Rajič
+  - Lei Ke
+  - Yu-Wing Tai
+  - Chi-Keung Tang
+  - Martin Danelljan
+  - Fisher Yu
 year: 2023
-venue: "arXiv"
-paper_url: "https://arxiv.org/abs/2307.01197"
-topics: ["Video Segmentation", "Zero-shot Learning", "Point Tracking", "Foundation Models", "SAM"]
+venue: arXiv
+paper_url: https://arxiv.org/abs/2307.01197
+topics:
+  - Video Segmentation
+  - Zero-shot Learning
+  - Point Tracking
+  - Foundation Models
+  - SAM
 ---
 
 ## **📄 Segment Anything Meets Point Tracking 개요**

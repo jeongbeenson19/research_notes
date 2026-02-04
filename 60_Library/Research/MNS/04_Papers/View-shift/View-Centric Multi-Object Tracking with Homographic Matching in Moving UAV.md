@@ -1,18 +1,33 @@
 ---
-aliases: ["HomView-MOT"]
+aliases:
+  - HomView-MOT
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2024-02-03
-title: "View-Centric Multi-Object Tracking with Homographic Matching in Moving UAV"
-authors: ["Deyi Ji", "Siqi Gao", "Lanyun Zhu", "Qi Zhu", "Yiru Zhao", "Peng Xu", "Hongtao Lu", "Feng Zhao", "Jieping Ye"]
+title: View-Centric Multi-Object Tracking with Homographic Matching in Moving UAV
+authors:
+  - Deyi Ji
+  - Siqi Gao
+  - Lanyun Zhu
+  - Qi Zhu
+  - Yiru Zhao
+  - Peng Xu
+  - Hongtao Lu
+  - Feng Zhao
+  - Jieping Ye
 year: 2024
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2403.10830
-topics: ["Multi-Object Tracking", "UAV", "Homography", "Computer Vision"]
+topics:
+  - Multi-Object Tracking
+  - UAV
+  - Homography
+  - Computer Vision
 ---
 
 ## **📄 View-Centric Multi-Object Tracking with Homographic Matching in Moving UAV 개요**

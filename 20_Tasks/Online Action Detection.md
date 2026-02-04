@@ -19,7 +19,7 @@
 2.  **시간적 모델링 (Temporal Modeling)**:
     - 추출된 특징들의 시퀀스를 모델링하여 시간적 의존성을 학습합니다.
     - **RNN/LSTM 기반 모델**: 순차적인 데이터 처리에 강점을 가지며, 과거 정보를 내부 상태(hidden state)에 저장하여 현재 예측에 활용합니다.
-    - **Transformer 기반 모델**: 어텐션 메커니즘을 통해 더 길고 복잡한 시간적 관계를 학습하는 데 효과적입니다. [[Long Short-Term Transformer for Online Action Detection|LSTR]]은 트랜스포머를 온라인 환경에 맞게 변형한 대표적인 예시입니다.
+    - **Transformer 기반 모델**: 어텐션 메커니즘을 통해 더 길고 복잡한 시간적 관계를 학습하는 데 효과적입니다. [[40_Papers/Long Short-Term Transformer for Online Action Detection|LSTR]]은 트랜스포머를 온라인 환경에 맞게 변형한 대표적인 예시입니다.
 
 ## 주요 과제 (Challenges)
 
@@ -28,7 +28,7 @@
 - **시점의 불확실성**: 언제 행동이 시작될지 모르기 때문에, 모델은 지속적으로 스트림을 분석하며 행동의 시작점을 탐지해야 합니다.
 
 ## 관련 논문
-- [[Long Short-Term Transformer for Online Action Detection]]
+- [[40_Papers/Long Short-Term Transformer for Online Action Detection]]
 
 ## 관련 링크
 - [[Temporal Modeling]]

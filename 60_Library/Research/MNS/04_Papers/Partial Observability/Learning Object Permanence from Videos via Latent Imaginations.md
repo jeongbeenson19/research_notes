@@ -1,20 +1,31 @@
 ---
-alias: ["Looping LOCI"]
+alias:
+  - Looping LOCI
 type: paper
 tags:
   - DeepLearning
   - Paper
   - ObjectPermanence
   - ComputerVision
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "Looping LOCI: Developing Object Permanence from Videos"
-authors: ["Manuel Traub", "Frederic Becker", "Sebastian Otte", "Martin V. Butz"]
+authors:
+  - Manuel Traub
+  - Frederic Becker
+  - Sebastian Otte
+  - Martin V. Butz
 year: 2023
-venue: "ICLR 2024"
+venue: ICLR 2024
 paper_url: https://arxiv.org/abs/2310.10372
-topics: ["Object Permanence", "Compositional Scene Representation", "Unsupervised Learning", "Video Understanding", "Intuitive Physics"]
+topics:
+  - Object Permanence
+  - Compositional Scene Representation
+  - Unsupervised Learning
+  - Video Understanding
+  - Intuitive Physics
 ---
 
 ## **📄 Looping LOCI: Developing Object Permanence from Videos 개요**

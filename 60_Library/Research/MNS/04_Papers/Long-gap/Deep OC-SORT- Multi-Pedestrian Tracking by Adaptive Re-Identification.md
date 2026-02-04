@@ -1,5 +1,6 @@
 ---
-alias: ["Deep OC-SORT"]
+alias:
+  - Deep OC-SORT
 type: paper
 tags:
   - DeepLearning
@@ -7,15 +8,24 @@ tags:
   - MultiObjectTracking
   - PedestrianTracking
   - ReIdentification
+  - Long-gap
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification"
-authors: ["Gerard Maggiolino", "Adnan Ahmad", "Jinkun Cao", "Kris Kitani"]
+authors:
+  - Gerard Maggiolino
+  - Adnan Ahmad
+  - Jinkun Cao
+  - Kris Kitani
 year: 2023
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2302.11813
-topics: ["Multi-Object Tracking (MOT)", "Pedestrian Tracking", "Re-Identification", "Computer Vision"]
+topics:
+  - Multi-Object Tracking (MOT)
+  - Pedestrian Tracking
+  - Re-Identification
+  - Computer Vision
 ---
 
 ## **📄 Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification 개요**

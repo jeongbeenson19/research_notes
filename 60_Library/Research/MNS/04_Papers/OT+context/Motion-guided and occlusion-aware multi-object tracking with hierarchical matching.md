@@ -1,18 +1,26 @@
 ---
-aliases: ["MSPNet"]
+aliases:
+  - MSPNet
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - OTnContext
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Motion-guided and occlusion-aware multi-object tracking with hierarchical matching"
-authors: ["Yujin Zheng", "외 다수"]
+title: Motion-guided and occlusion-aware multi-object tracking with hierarchical matching
+authors:
+  - Yujin Zheng
+  - 외 다수
 year: 2024
 venue: "[정보 없음]"
 paper_url: https://www.researchgate.net/publication/378000000_Motion-guided_and_occlusion-aware_multi-object_tracking_with_hierarchical_matching
-topics: ["Multi-Object Tracking", "Occlusion Handling", "Hierarchical Matching", "Motion Guidance"]
+topics:
+  - Multi-Object Tracking
+  - Occlusion Handling
+  - Hierarchical Matching
+  - Motion Guidance
 ---
 
 ## **📄 Motion-guided and occlusion-aware multi-object tracking with hierarchical matching 개요**

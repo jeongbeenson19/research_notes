@@ -1,18 +1,26 @@
 ---
-alias: ["PMTrack"]
+alias:
+  - PMTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "PMTrack: Multi-object Tracking with Motion-Aware"
-authors: ["Xu Guo", "Yujin Zheng", "Dingwen Wang"]
+authors:
+  - Xu Guo
+  - Yujin Zheng
+  - Dingwen Wang
 year: 2024
-venue: "ACCV"
-paper_url: "https://openaccess.thecvf.com/content/ACCV2024/papers/Guo_PMTrack_Multi-object_Tracking_with_Motion-Aware_ACCV_2024_paper.pdf"
-topics: ["Multi-object Tracking", "Computer Vision", "Motion Estimation"]
+venue: ACCV
+paper_url: https://openaccess.thecvf.com/content/ACCV2024/papers/Guo_PMTrack_Multi-object_Tracking_with_Motion-Aware_ACCV_2024_paper.pdf
+topics:
+  - Multi-object Tracking
+  - Computer Vision
+  - Motion Estimation
 ---
 
 ## **📄 PMTrack: Multi-object Tracking with Motion-Aware 개요**

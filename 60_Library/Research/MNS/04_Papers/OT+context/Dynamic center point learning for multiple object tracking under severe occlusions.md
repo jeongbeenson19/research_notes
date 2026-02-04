@@ -1,18 +1,28 @@
 ---
-aliases: ["Dynamic center point learning MOT"]
+aliases:
+  - Dynamic center point learning MOT
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - OTnContext
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Dynamic center point learning for multiple object tracking under Severe occlusions"
-authors: ["Jinqiu Sun", "Yaoqi Hu", "Axi Niu", "Yanning Zhang"]
+title: Dynamic center point learning for multiple object tracking under Severe occlusions
+authors:
+  - Jinqiu Sun
+  - Yaoqi Hu
+  - Axi Niu
+  - Yanning Zhang
 year: 2024
-venue: "Knowledge-Based Systems"
-paper_url: "https://www.researchgate.net/publication/381290000_Dynamic_center_point_learning_for_multiple_object_tracking_under_Severe_occlusions"
-topics: ["Multi-Object Tracking", "Occlusion Handling", "Deep Learning", "Computer Vision"]
+venue: Knowledge-Based Systems
+paper_url: https://www.researchgate.net/publication/381290000_Dynamic_center_point_learning_for_multiple_object_tracking_under_Severe_occlusions
+topics:
+  - Multi-Object Tracking
+  - Occlusion Handling
+  - Deep Learning
+  - Computer Vision
 ---
 
 ## **📄 Dynamic center point learning for multiple object tracking under Severe occlusions 개요**

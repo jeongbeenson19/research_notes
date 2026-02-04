@@ -1,5 +1,6 @@
 ---
-alias: ["BroadTrack"]
+alias:
+  - BroadTrack
 type: paper
 tags:
   - DeepLearning
@@ -7,15 +8,24 @@ tags:
   - ComputerVision
   - CameraTracking
   - Soccer
+  - ViewShift
 status: 🟩 Done
 rating: 0
 date: 2026-02-03
 title: "BroadTrack: Broadcast Camera Tracking for Soccer"
-authors: ["Floriane Magera", "Thomas Hoyoux", "Olivier Barnich", "Marc Van Droogenbroeck"]
+authors:
+  - Floriane Magera
+  - Thomas Hoyoux
+  - Olivier Barnich
+  - Marc Van Droogenbroeck
 year: 2024
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2412.01721
-topics: ["Camera Tracking", "Soccer Analytics", "Broadcast Systems", "Computer Vision"]
+topics:
+  - Camera Tracking
+  - Soccer Analytics
+  - Broadcast Systems
+  - Computer Vision
 ---
 
 ## **📄 BroadTrack: Broadcast Camera Tracking for Soccer 개요**

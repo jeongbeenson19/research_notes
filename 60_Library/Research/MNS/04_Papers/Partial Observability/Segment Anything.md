@@ -1,18 +1,30 @@
 ---
-aliases: ["Segment Anything"]
+aliases:
+  - Segment Anything
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Segment Anything"
-authors: ["Alexander Kirillov", "Eric Mintun", "Hanzi Mao", "Chloe Rolland", "Ross Girshick", "Piotr Dollár", "Facebook AI Research"]
+title: Segment Anything
+authors:
+  - Alexander Kirillov
+  - Eric Mintun
+  - Hanzi Mao
+  - Chloe Rolland
+  - Ross Girshick
+  - Piotr Dollár
+  - Facebook AI Research
 year: 2023
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2304.02643
-topics: ["Image Segmentation", "Foundation Models", "Computer Vision"]
+topics:
+  - Image Segmentation
+  - Foundation Models
+  - Computer Vision
 ---
 
 ## **📄 Segment Anything 개요**

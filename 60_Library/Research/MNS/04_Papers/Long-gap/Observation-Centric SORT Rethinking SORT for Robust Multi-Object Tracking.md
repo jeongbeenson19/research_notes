@@ -1,20 +1,33 @@
 ---
-aliases: ["OC-SORT"]
+aliases:
+  - OC-SORT
 type: paper
 tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
   - SORT
+  - Long-gap
+  - OTnContext
+  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking"
-authors: ["Jinkun Cao", "Xinshuo Weng", "Rui Khirodkar", "Jianing Pang", "Kris Kitani"]
+authors:
+  - Jinkun Cao
+  - Xinshuo Weng
+  - Rui Khirodkar
+  - Jianing Pang
+  - Kris Kitani
 year: 2022
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/pdf/2203.14360.pdf
-topics: ["Multi-Object Tracking", "Kalman Filter", "Occlusion Handling", "Non-linear Motion"]
+topics:
+  - Multi-Object Tracking
+  - Kalman Filter
+  - Occlusion Handling
+  - Non-linear Motion
 ---
 
 ## **📄 Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking 개요**
@@ -23,9 +36,9 @@ topics: ["Multi-Object Tracking", "Kalman Filter", "Occlusion Handling", "Non-li
 - **핵심 아이디어**:
     기존 [[Kalman Filter (KF)]] 기반의 [[Multi-Object Tracking (MOT)]] 방법론인 [[SORT]]의 한계점(선형 운동 가정, 추정 중심적 접근, 오차 누적)을 해결하기 위해 "관측 중심(observation-centric)" 접근 방식을 제안한다. 특히, 폐색(occlusion) 및 비선형 움직임(non-linear motion) 상황에서 추적의 강건성(robustness)을 향상시키는 데 중점을 둔다. 이를 위해 [[Observation-centric Re-Update (ORU)]]와 [[Observation-Centric Momentum (OCM)]]이라는 두 가지 주요 혁신 기법을 도입한다.
 - **주요 성과**:
-    - 기존 [[SORT]]의 "Simple, Online, Real-Time" 특성을 유지한다. [1, 2, 6]
-    - 단일 CPU에서 700+ FPS (초당 프레임 수) 이상의 빠른 속도로 동작한다. [1, 4, 6]
-    - MOT17, MOT20, KITTI, DanceTrack 등 다양한 데이터셋에서 최첨단(state-of-the-art) 성능을 달성했으며, 특히 객체 움직임이 매우 비선형적인 DanceTrack에서 뛰어난 성능을 보인다. [1, 2, 4, 7]
+    - 기존 [[SORT]]의 "Simple, Online, Real-Time" 특성을 유지한다.
+    - 단일 CPU에서 700+ FPS (초당 프레임 수) 이상의 빠른 속도로 동작한다. 
+    - MOT17, MOT20, KITTI, DanceTrack 등 다양한 데이터셋에서 최첨단(state-of-the-art) 성능을 달성했으며, 특히 객체 움직임이 매우 비선형적인 DanceTrack에서 뛰어난 성능을 보인다.
     - MOT17에서 63.2 HOTA, MOT20에서 62.1 HOTA를 기록하여 기존 발표된 방법론들을 능가한다. [7]
 
 ---
@@ -81,7 +94,7 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 | **제한 사항** | (SORT의 한계점 개선) | 상태 추정 노이즈에 민감, 오차 누적, 추정 중심적 [2, 5, 6] |
 | **복잡도** | Simple, Online, Real-Time 유지, 단일 CPU 700+ FPS [1, 6, 8] | Simple, Online, Real-Time [1] |
 
-- OC-SORT는 [[SORT]]의 기본적인 프레임워크를 유지하면서도, [[Kalman Filter]] 기반 추적의 고질적인 문제점인 폐색 시 오차 누적과 비선형 움직임에 대한 취약성을 관측 중심의 접근 방식으로 효과적으로 개선한다. [1, 2, 4, 6]
+- OC-SORT는 [[SORT]]의 기본적인 프레임워크를 유지하면서도, [[Kalman Filter]] 기반 추적의 고질적인 문제점인 폐색 시 오차 누적과 비선형 움직임에 대한 취약성을 관측 중심의 접근 방식으로 효과적으로 개선한다. 
 
 ---
 
@@ -147,9 +160,32 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 
 ## **📚 Related Papers (Dataview)**
 
+### Object Tracking + Context
+
 ```dataview
 TABLE status, rating, year
-FROM #DeepLearning
+FROM #OTnContext
 WHERE contains(topics, this.topics) AND file.name != this.file.name
 SORT year desc
 ```
+---
+
+### Long Gap
+
+```dataview
+TABLE status, rating, year
+FROM #Long-gap
+WHERE contains(topics, this.topics) AND file.name != this.file.name
+SORT year desc
+```
+---
+
+### Partial Observability
+
+```dataview
+TABLE status, rating, year
+FROM #PartialObservability
+WHERE contains(topics, this.topics) AND file.name != this.file.name
+SORT year desc
+```
+---

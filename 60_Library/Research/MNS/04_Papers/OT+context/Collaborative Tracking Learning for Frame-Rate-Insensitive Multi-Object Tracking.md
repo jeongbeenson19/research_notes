@@ -1,18 +1,27 @@
 ---
-alias: ["ColTrack"]
+alias:
+  - ColTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - OTnContext
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Collaborative Tracking Learning for Frame-Rate-Insensitive Multi-Object Tracking"
-authors: ["Yiheng Liu", "Junta Wu", "Yi Fu"]
+title: Collaborative Tracking Learning for Frame-Rate-Insensitive Multi-Object Tracking
+authors:
+  - Yiheng Liu
+  - Junta Wu
+  - Yi Fu
 year: 2023
-venue: "ICCV"
-paper_url: "https://arxiv.org/abs/2308.05911"
-topics: ["Multi-Object Tracking", "MOT", "Deep Learning", "Computer Vision"]
+venue: ICCV
+paper_url: https://arxiv.org/abs/2308.05911
+topics:
+  - Multi-Object Tracking
+  - MOT
+  - Deep Learning
+  - Computer Vision
 ---
 
 ## **📄 Collaborative Tracking Learning for Frame-Rate-Insensitive Multi-Object Tracking 개요**

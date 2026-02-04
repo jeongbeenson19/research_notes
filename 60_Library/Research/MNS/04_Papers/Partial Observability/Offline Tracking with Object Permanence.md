@@ -1,18 +1,26 @@
 ---
-aliases: ["Offline Tracking with Object Permanence"]
+aliases:
+  - Offline Tracking with Object Permanence
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Offline Tracking with Object Permanence"
-authors: ["Xianzhong Liu", "Holger Caesar"]
+title: Offline Tracking with Object Permanence
+authors:
+  - Xianzhong Liu
+  - Holger Caesar
 year: 2023
-venue: "IEEE Intelligent Vehicles Symposium (IV 2024)"
-paper_url: "https://arxiv.org/abs/2310.01288"
-topics: ["Multi-Object Tracking", "Autonomous Driving", "Object Permanence", "Offline Tracking"]
+venue: IEEE Intelligent Vehicles Symposium (IV 2024)
+paper_url: https://arxiv.org/abs/2310.01288
+topics:
+  - Multi-Object Tracking
+  - Autonomous Driving
+  - Object Permanence
+  - Offline Tracking
 ---
 
 ## **📄 Offline Tracking with Object Permanence 개요**

@@ -1,18 +1,30 @@
 ---
-aliases: ["QQ-STR", "Invisible Object Tracking"]
+aliases:
+  - QQ-STR
+  - Invisible Object Tracking
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "Where is the Invisible: Spatial-Temporal Reasoning with Object Permanence"
-authors: ["Zijian Wang", "Fangwei Zhong", "Hai Ci", "Wei Wang", "Yizhou Wang"]
+authors:
+  - Zijian Wang
+  - Fangwei Zhong
+  - Hai Ci
+  - Wei Wang
+  - Yizhou Wang
 year: 2023
-venue: "ICLR 2024 Conference (Withdrawn Submission)"
-paper_url: "https://openreview.net/forum?id=9071"
-topics: ["Object Tracking", "Spatial-Temporal Reasoning", "Object Permanence", "Computer Vision"]
+venue: ICLR 2024 Conference (Withdrawn Submission)
+paper_url: https://openreview.net/forum?id=9071
+topics:
+  - Object Tracking
+  - Spatial-Temporal Reasoning
+  - Object Permanence
+  - Computer Vision
 ---
 
 ## **📄 Where is the Invisible: Spatial-Temporal Reasoning with Object Permanence 개요**

@@ -1,5 +1,6 @@
 ---
-alias: ["DARTH: MOT를 위한 전체론적 테스트 시간 적응"]
+alias:
+  - "DARTH: MOT를 위한 전체론적 테스트 시간 적응"
 type: paper
 tags:
   - DeepLearning
@@ -7,15 +8,25 @@ tags:
   - MultipleObjectTracking
   - TestTimeAdaptation
   - DomainAdaptation
+  - Long-gap
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "DARTH: Holistic Test-time Adaptation for Multiple Object Tracking"
-authors: ["Mattia Segu", "Bernt Schiele", "Fisher Yu"]
+authors:
+  - Mattia Segu
+  - Bernt Schiele
+  - Fisher Yu
 year: 2023
-venue: "ICCV"
-paper_url: "https://arxiv.org/abs/2310.01926"
-topics: ["Multiple Object Tracking (MOT)", "Test-time Adaptation (TTA)", "Domain Shift", "Self-supervised Learning", "Object Detection", "Instance Association"]
+venue: ICCV
+paper_url: https://arxiv.org/abs/2310.01926
+topics:
+  - Multiple Object Tracking (MOT)
+  - Test-time Adaptation (TTA)
+  - Domain Shift
+  - Self-supervised Learning
+  - Object Detection
+  - Instance Association
 ---
 
 ## **📄 DARTH: Holistic Test-time Adaptation for Multiple Object Tracking 개요**

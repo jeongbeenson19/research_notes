@@ -6,7 +6,8 @@ tags:
   - DeepLearning
   - Paper
   - MultiObjectTracking
-status: 🟩 Done
+  - OTnContext
+status: 🟧 Reading
 rating: 5
 date: 2026-02-03
 title: Focusing on Tracks for Online Multi-Object Tracking

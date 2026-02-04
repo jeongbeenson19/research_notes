@@ -1,20 +1,28 @@
 ---
-aliases: ["SAMTrack"]
+aliases:
+  - SAMTrack
 type: paper
 tags:
   - DeepLearning
   - Paper
   - VideoSegmentation
   - ObjectTracking
-status: 🟩 Done
+  - PartialObservability
+status: 🟧 Reading
 rating: 0
 date: 2026-02-03
-title: "Segment and Track Anything"
-authors: ["Yangming Cheng", "et al."]
+title: Segment and Track Anything
+authors:
+  - Yangming Cheng
+  - et al.
 year: 2023
-venue: "arXiv"
+venue: arXiv
 paper_url: https://arxiv.org/abs/2305.06558
-topics: ["Video Object Segmentation", "Object Tracking", "Foundation Models", "Multimodal Interaction"]
+topics:
+  - Video Object Segmentation
+  - Object Tracking
+  - Foundation Models
+  - Multimodal Interaction
 ---
 
 ## **📄 Segment and Track Anything 개요**

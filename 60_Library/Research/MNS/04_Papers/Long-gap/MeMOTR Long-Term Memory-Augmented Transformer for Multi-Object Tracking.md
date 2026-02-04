@@ -1,5 +1,6 @@
 ---
-alias: ["MeMOTR"]
+alias:
+  - MeMOTR
 type: paper
 tags:
   - DeepLearning
@@ -7,15 +8,24 @@ tags:
   - MultiObjectTracking
   - Transformer
   - MemoryAugmented
+  - Long-gap
+  - PartialObservability
 status: 🟩 Done
 rating: 0
 date: 2026-02-03
 title: "MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking"
-authors: ["Ruopeng Gao", "Limin Wang"]
+authors:
+  - Ruopeng Gao
+  - Limin Wang
 year: 2023
-venue: "ICCV"
+venue: ICCV
 paper_url: https://arxiv.org/abs/2307.15700
-topics: ["Multi-Object Tracking", "Transformer", "Long-Term Memory", "Deep Learning", "Computer Vision"]
+topics:
+  - Multi-Object Tracking
+  - Transformer
+  - Long-Term Memory
+  - Deep Learning
+  - Computer Vision
 ---
 
 ## **📄 MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking 개요**
