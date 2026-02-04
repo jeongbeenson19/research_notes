@@ -148,8 +148,8 @@ topics:
 ## **📚 Related Papers (Dataview)**
 
 ```dataview
-TABLE status, rating, year
-FROM #DeepLearning
+TABLE year, Keyword
+FROM #Long-gap
 WHERE contains(topics, this.topics) AND file.name != this.file.name
 SORT year desc
 ```

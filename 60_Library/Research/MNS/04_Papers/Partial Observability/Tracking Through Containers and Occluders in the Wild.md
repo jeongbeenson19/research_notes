@@ -1,18 +1,31 @@
 ---
-alias: ["TCOW"]
+alias:
+  - TCOW
 type: paper
 tags:
   - DeepLearning
   - Paper
+  - PartialObservability
 status: 🟧 Reading
 rating: 0
 date: 2023-05-04
-title: "Tracking Through Containers and Occluders in the Wild"
-authors: ["Basile Van Hoorick", "Pavel Tokmakov", "Simon Stent", "Jie Li", "Carl Vondrick"]
+title: Tracking Through Containers and Occluders in the Wild
+authors:
+  - Basile Van Hoorick
+  - Pavel Tokmakov
+  - Simon Stent
+  - Jie Li
+  - Carl Vondrick
 year: 2023
-venue: "CVPR"
-paper_url: "https://arxiv.org/abs/2305.03052"
-topics: ["Object Tracking", "Occlusion", "Containment", "Object Permanence", "Video Segmentation", "Computer Vision"]
+venue: CVPR
+paper_url: https://arxiv.org/abs/2305.03052
+topics:
+  - Object Tracking
+  - Occlusion
+  - Containment
+  - Object Permanence
+  - Video Segmentation
+  - Computer Vision
 ---
 
 ## **📄 Tracking Through Containers and Occluders in the Wild 개요**

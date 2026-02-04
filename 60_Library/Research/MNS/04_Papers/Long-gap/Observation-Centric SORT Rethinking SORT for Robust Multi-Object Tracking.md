@@ -9,7 +9,6 @@ tags:
   - SORT
   - Long-gap
   - OTnContext
-  - ViewShift
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
@@ -28,6 +27,11 @@ topics:
   - Kalman Filter
   - Occlusion Handling
   - Non-linear Motion
+Keyword:
+  - ORU
+  - OCM
+  - Occlusion Robusteness
+  - Non-linear Motion Robustness
 ---
 
 ## **📄 Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking 개요**
@@ -48,7 +52,7 @@ topics:
 OC-SORT는 기존 [[SORT]] 프레임워크를 기반으로 하며, 특히 폐색 기간 동안의 오차 처리 방식을 개선하는 관측 중심 메커니즘을 통합한다. [2, 6, 8]
 
 ### **0. 기호/차원**
-- 본 요약에 사용된 자료에서는 특정 기호 및 차원이 명시적으로 제공되지 않았습니다. 일반적으로 [[Kalman Filter]]는 객체의 위치($x, y$), 크기($h, w$), 속도($v_x, v_y$) 등을 포함하는 상태 벡터($\mathbf{x}$)와 공분산 행렬($\mathbf{P}$)을 사용합니다.
+- 일반적으로 [[Kalman Filter]]는 객체의 위치($x, y$), 크기($h, w$), 속도($v_x, v_y$) 등을 포함하는 상태 벡터($\mathbf{x}$)와 공분산 행렬($\mathbf{P}$)을 사용합니다.
 
 ### **1. 주요 파트 (관측 중심 메커니즘)**
 OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라인 내에서 [[Kalman Filter]]의 동작을 개선하는 데 초점을 맞춘다.
@@ -163,7 +167,7 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 ### Object Tracking + Context
 
 ```dataview
-TABLE status, rating, year
+TABLE status, rating, year, Keyword
 FROM #OTnContext
 WHERE contains(topics, this.topics) AND file.name != this.file.name
 SORT year desc
