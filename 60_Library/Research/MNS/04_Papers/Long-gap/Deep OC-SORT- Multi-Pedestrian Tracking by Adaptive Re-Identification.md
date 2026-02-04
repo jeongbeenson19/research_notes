@@ -146,7 +146,7 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 ## 🔁 내 연구와의 매핑 (OC-SORT)
 
 - 파이프라인 위치: **pre(camera motion compensation) + post(heuristic recovery)**
-  - KF 예측 + Hungarian data association을 기본으로 하고, ORU/OCM/OCR을 **연관(association) 과정에 통합**함 
+  - K 
   - OCR은 “주 연관성 단계 이후” IOU 기반 복구 휴리스틱으로 **후처리(post 성격)** 가 강함  [oai_citation:1‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
 
 ### State 대응
