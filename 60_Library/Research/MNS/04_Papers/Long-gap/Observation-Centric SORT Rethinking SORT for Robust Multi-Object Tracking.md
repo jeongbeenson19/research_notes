@@ -150,6 +150,43 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 
 ---
 
+## 🔁 내 아이디어와의 매핑
+- 파이프라인 위치: pre / in-loop / post
+- 대응 state:
+  - location:
+  - appearance:
+  - semantic:
+  - uncertainty:
+- 관련 키워드(최대 3): 
+
+---
+
+## 🧪 Assumptions → 테스트 케이스
+- 핵심 가정 1:
+  - 깨지는 상황:
+- 핵심 가정 2:
+  - 깨지는 상황:
+
+## 💥 Failure Modes (재현 조건 포함)
+1) 실패 모드:
+   - 조건: (gap, occlusion/miss, motion pattern)
+   - 오류 유형: IDSW / frag / false merge
+2)
+
+## 🧩 구현 체크리스트(차용 가능성)
+- ORU: 입력/출력/필요 변수/임계값
+- OCM: cost 항/필요 변수
+- OCR: 수행 조건/임계값
+
+## 📌 Decision Log 영향
+- D1 (Fusion):
+- D2 (Belief):
+- D3 (Semantic):
+
+## ✅ 다음 행동(이 논문에서 파생)
+- (1) 내 실험에서 검증할 가설 1개:
+- (2) ablation 항목 1개:
+- (3) 프로토콜 추가 1개:
 ## **🔗 관련 링크**
 - [[Multi-Object Tracking]]
 - [[Kalman Filter]]
