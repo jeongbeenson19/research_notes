@@ -39,7 +39,7 @@ topics:
 
 ### 1.2 핵심 도전 과제
 
-- **Occlusion (가림)**: 객체가 다른 객체나 배경에 가려짐
+- **Occlusion (가림)**: 객체가 다른 객체나 배경에 가려짐 ^d379bd
 - **Appearance Change (외관 변화)**: 조명, 시점, 자세 변화
 - **Motion Blur (모션 블러)**: 빠른 움직임으로 인한 흐릿함
 - **Similar Distractors (유사 방해 객체)**: 목표와 비슷한 다른 객체
@@ -71,6 +71,8 @@ topics:
 - LaSOT, TrackingNet, GOT-10k, VOT
 
 ### 2.2 Multiple Object Tracking (MOT)
+
+^730413
 
 **정의**: 비디오에서 여러 객체를 동시에 탐지하고 추적하며, 각 객체에 고유 ID를 할당합니다.
 

@@ -7,7 +7,7 @@ tags:
   - Paper
   - MultiObjectTracking
   - Long-gap
-status: 🟩 Done
+status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "MOTRv2: Bootstrapping End-to-End Multi-Object Tracking by Pretrained Object Detectors"

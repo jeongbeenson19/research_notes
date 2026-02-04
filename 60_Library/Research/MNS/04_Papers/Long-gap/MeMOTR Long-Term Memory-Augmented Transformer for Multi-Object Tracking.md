@@ -10,7 +10,7 @@ tags:
   - MemoryAugmented
   - Long-gap
   - PartialObservability
-status: 🟩 Done
+status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking"
