@@ -10,6 +10,7 @@ tags:
   - ReIdentification
   - Long-gap
   - ViewShift
+  - in-process
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
@@ -82,8 +83,8 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 ### **3. 데이터 연관 (Data Association)**
 - 폐색 정도에 따라 비용 행렬(cost matrix)에서 모션 및 외형 특징의 가중치를 적응적으로 조정하는 메커니즘을 포함한다.[6] 이는 다양한 환경 조건에서 추적의 강건성을 보장한다.
 
-### **4. CMC(Camera Motion Compensation)**
-- 
+### **4. [[CMC(Camera Motion Compensation)]]**
+- Camera Motion Compensation은 연속 프레임 사이의 전역 2D 유사변환(스케일·회전)과 평행이동을 추정해, 카메라 움직임으로 인한 겉보기 이동을 추정하고 이를 추적 파이프라인에 명시적으로 보정하는 모듈입니다. 핵심 목적은 탐지-기반 칼만 예측과 관측 보정이 “고정 카메라” 가정에 끌려가지 않도록, 프레임 간 카메라 변화를 먼저 제거해 물체 자체의 운동 신호를 더 깨끗하게 쓰게 만드는 것입니다.
 
 
 ---
@@ -143,11 +144,11 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 - 외형 정보와 모션 정보의 적응적 통합에 대한 추가 연구, 다양한 환경 및 시나리오에서의 강건성 향상, 그리고 실시간 성능 최적화 등이 예상될 수 있다.
 
 ---
-## 🔁 내 연구와의 매핑 (OC-SORT)
+## 🔁 내 연구와의 매핑 (Deep OC-SORT)
 
-- 파이프라인 위치: **pre(camera motion compensation) + post(heuristic recovery)**
-  - K 
-  - OCR은 “주 연관성 단계 이후” IOU 기반 복구 휴리스틱으로 **후처리(post 성격)** 가 강함  [oai_citation:1‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+- 파이프라인 위치: **in-process, post(camera motion compensation)
+  - 기존 OC-SORT 요소에 카메라 모션 보정을 명시적으로 추가(`OpenCV.contrib.VidStab`)
+  - 
 
 ### State 대응
 
