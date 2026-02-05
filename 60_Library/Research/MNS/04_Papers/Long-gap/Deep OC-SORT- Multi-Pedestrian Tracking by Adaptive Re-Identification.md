@@ -138,8 +138,7 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 | **Deep OC-SORT** | **64.9**[1][3][5] | **65.9**[1] | **80.6**[1] | **79.4**[1] | **1,950**[1] | **2,040**[1] | **63.9**[1][3][5] | **65.9**[1] | **79.2**[1] | **75.6**[1] | **779**[1] | **1,536**[1] | **61.3**[3][5] |
 
 ---
-
-## **🔮 향후 연구 방향**
+## 🔮 향후 연구 방향
 - (검색 결과에서 구체적인 정보는 확인되지 않음)
 - 외형 정보와 모션 정보의 적응적 통합에 대한 추가 연구, 다양한 환경 및 시나리오에서의 강건성 향상, 그리고 실시간 성능 최적화 등이 예상될 수 있다.
 
@@ -148,7 +147,7 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 
 - 파이프라인 위치: **in-process, post(camera motion compensation)
   - 기존 OC-SORT 요소에 카메라 모션 보정을 명시적으로 추가(`OpenCV.contrib.VidStab`)
-  - 
+  - tracklet 연결 시 dynamic apprearance로 외형 임베딩에 임계값 설정(좋은 프레임은 re-id 신호, 나쁜 프레임은 노이즈가 연결 결정을 흐리지 않게 모션 기반 연관을 보호)
 
 ### State 대응
 
@@ -160,7 +159,7 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
     - 단, 이 노트 기준으로는 **분포(belief) 명시보다는 ‘관측으로 재고정’**에 가까움(uncertainty 설계는 별도 보강 필요)
 
 - appearance
-  - **사용 여부**: (이 노트 기준) **명시적 appearance/ReID 사용 언급 없음**
+  - **사용 여부**: appearance 사용(appearance embedding에 dynamic appearance와 adaptive weighting으로 가중치 부여)
   - **내 아이디어와의 대응**:
     - 너의 object-state memory(appearance bank/prototype)와는 축이 다름 → “motion/observation-centric만으로 어디까지 버티는지”를 보는 **비교 기준(baseline/ablation 축)**로 적합  
     - 스포츠(유니폼 유사)처럼 appearance가 약할 때는 OC-SORT류 접근이 더 현실적일 수 있음
