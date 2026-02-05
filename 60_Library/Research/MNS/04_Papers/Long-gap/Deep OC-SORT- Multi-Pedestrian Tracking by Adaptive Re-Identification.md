@@ -145,43 +145,39 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 ---
 ## 🔁 내 연구와의 매핑 (Deep OC-SORT)
 
-- 파이프라인 위치: **in-process, post(camera motion compensation)
+- 파이프라인 위치: **in-process, post(camera motion compensation, DA, AW)
   - 기존 OC-SORT 요소에 카메라 모션 보정을 명시적으로 추가(`OpenCV.contrib.VidStab`)
   - tracklet 연결 시 dynamic apprearance로 외형 임베딩에 임계값 설정(좋은 프레임은 re-id 신호, 나쁜 프레임은 노이즈가 연결 결정을 흐리지 않게 모션 기반 연관을 보호)
 
 ### State 대응
 
 - location
-  - **표현(Representation)**: KF 기반 객체 상태(추정/예측) + 관측치 기반 재업데이트
-  - **핵심 메커니즘(ORU)**: 트랙이 손실→재활성화될 때, 과거의 추정치를 관측치 기반으로 대체(가상 궤적 생성 후 과거 KF 파라미터 재업데이트)  [oai_citation:2‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - **표현(Representation)**: handcrafted camera motion estimation
+  - **핵심 메커니즘(CMC)**: `OpenCV.contirb.VidStab`을 이용한 카메라 모션 추정
   - **내 아이디어와의 대응**:
-    - “out-of-view 동안 location belief 유지”에서 **belief 업데이트를 ‘관측 재주입’으로 안정화**하는 구현 레퍼런스로 사용 가능
-    - 단, 이 노트 기준으로는 **분포(belief) 명시보다는 ‘관측으로 재고정’**에 가까움(uncertainty 설계는 별도 보강 필요)
+    - View-shift 발생시 해결 방안으로 사용 가능
 
 - appearance
   - **사용 여부**: appearance 사용(appearance embedding에 dynamic appearance와 adaptive weighting으로 가중치 부여)
-  - **내 아이디어와의 대응**:
-    - 너의 object-state memory(appearance bank/prototype)와는 축이 다름 → “motion/observation-centric만으로 어디까지 버티는지”를 보는 **비교 기준(baseline/ablation 축)**로 적합  
-    - 스포츠(유니폼 유사)처럼 appearance가 약할 때는 OC-SORT류 접근이 더 현실적일 수 있음
+  - **내 아이디어와의 대응**: 다른 embedding의 영향력을 훼손하지 않는 기법으로 도입 가능
 
 - semantic
-  - **사용 여부**: (이 노트 기준) **명시적 semantic state 사용 언급 없음**
+  - **사용 여부**:  **명시적 semantic state 사용 언급 없음**
   - **내 아이디어와의 대응**:
-    - semantic을 넣는다면 OC-SORT의 cost 항(OCM) 또는 recovery 단계(OCR)에 “soft prior”로 붙이는 형태가 자연스럽지만, 본 논문(노트) 자체의 핵심은 아님
 
 - uncertainty
-  - **표현 후보**: KF 공분산/게이팅/occlusion 시 업데이트 정책이 사실상 uncertainty 처리에 해당 가능(다만 노트에 상세 수식은 없음)
+  - **표현 후보**: appearance embedding conf_score로 조절(DA)
   - **내 아이디어와의 대응**:
-    - 네가 목표로 하는 belief-state(분포) 관점에서는 “공분산 증가/감쇠, update freeze/decay” 규칙을 **명시적으로 추가 설계**해야 함
-    - ORU는 “불확실성 누적”을 줄이기 위해 “관측으로 과거를 재정렬”하는 쪽에 가까움  [oai_citation:3‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+    - 네가 목표로 하는 belief-state(분포) 관점에서는 “공분산 증가/감쇠, update freeze/decay” 규칙을 **명시적으로 추가 설계**
+
 
 ### 키워드 연결(주축 1 + 부축 1)
 
-- 주축: **out-of-view reactivation / long-gap 대응**
-  - ORU가 “재활성화 시 과거 추정 오차 수정”을 명시  [oai_citation:4‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+- 주축: **out-of-view reactivation / view-shift 대응**
+  - ORU가 “재활성화 시 과거 추정 오차 수정”을 명시 
 - 부축: **visibility-aware(occlusion robustness)**
-  - 논문(노트)이 폐색(occlusion) 강건성을 핵심 목표로 둠  [oai_citation:5‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-- (참고) context gating은 “장면/관계”보다는 **모션 일관성(OCM) + IOU 복구(OCR)**로 후보를 조절하는 형태에 가까움  [oai_citation:6‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+  - 논문(노트)이 폐색(occlusion) 강건성을 핵심 목표로 둠 
+
 
 ### 판정(1~2분 결론)
 
