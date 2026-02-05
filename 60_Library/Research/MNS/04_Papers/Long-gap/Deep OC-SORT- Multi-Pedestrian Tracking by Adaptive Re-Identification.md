@@ -11,6 +11,7 @@ tags:
   - Long-gap
   - ViewShift
   - in-process
+  - post
 status: 🟧 Reading
 rating: 0
 date: 2026-02-03
@@ -166,75 +167,47 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
   - **내 아이디어와의 대응**:
 
 - uncertainty
-  - **표현 후보**: appearance embedding conf_score로 조절(DA)
-  - **내 아이디어와의 대응**:
-    - 네가 목표로 하는 belief-state(분포) 관점에서는 “공분산 증가/감쇠, update freeze/decay” 규칙을 **명시적으로 추가 설계**
+  - **표현 후보**: appearance embedding conf_score로 조절(DA), 행(특정 트랙)과 열(특정 박스)의 1, 2등 마진을 구해 각 트랙-박스 쌍 마다 보정 가중치 상출(AW)
+  - **내 아이디어와의 대응**: 특정 context의 불확실성에 따라 영향력을 조절함
 
 
 ### 키워드 연결(주축 1 + 부축 1)
 
 - 주축: **out-of-view reactivation / view-shift 대응**
   - ORU가 “재활성화 시 과거 추정 오차 수정”을 명시 
-- 부축: **visibility-aware(occlusion robustness)**
-  - 논문(노트)이 폐색(occlusion) 강건성을 핵심 목표로 둠 
+- 부축: **appearance를 이용한 robustness 강화**
+  - appearance embedding의 불확실성을 이용하여 re-activation 강건성을 부여
 
 
 ### 판정(1~2분 결론)
 
 - 유사:
-  - “관측 단절/재등장” 상황에서 **재활성화 안정화**를 직접 겨냥(ORU/OCR)  [oai_citation:7‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+  - “관측 단절/재등장” 상황에서 appearance를 활용하여 **재활성화 안정화**를 직접 겨냥(DA/AW)
+  - View-shift 상황에서 안정화를 위해 보정을 수행함
 - 차용:
-  - **ORU(재활성화 시 관측 기반 re-update)** 는 네 모듈의 “location state 재고정” 파트에 그대로 차용 후보  [oai_citation:8‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - **OCM(방향 일관성 cost 항)** 은 네 association cost에 “motion-based context prior”로 붙이기 쉬움  [oai_citation:9‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+  - **CMC(Camera Motion Compensation)** 은 View-shift 상황에서 적은 연산량으로 도입할 가능성이 있음
+  - **DA(Dynamic Appearance) & AW(Adaptive Weighting)** 은 Appearance를 활용한다는 측면에서 context 주입 방식으로 활용될 가능성이 있으며, 상보적인 구조 설계에 아이디어를 제공
 - 충돌/빈칸:
-  - 네 아이디어의 핵심인 **appearance memory / semantic state / belief(분포) 명시**는 이 노트 기준 OC-SORT가 직접 제공하지 않음 → 너의 novelty(또는 추가 기여) 영역으로 남음
-
----
-
-## 🧪 Assumptions → 테스트 케이스(재현 조건으로)
-
-- 가정 A: KF + Hungarian 기반의 온라인 추적 프레임워크 유지  [oai_citation:10‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - 깨지는 상황: 비선형/급가속 + 긴 gap에서 모션만으로 재연결 어려움(이때 ORU/OCM이 얼마나 버티는지)
-- 가정 B: off-the-shelf detections 사용(학습 없는 필터링 기반)  [oai_citation:11‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - 깨지는 상황: detector miss가 잦은 도메인(저조도/블러/군중)에서 OCR이 “잘못된 IOU 복구”로 false merge 유발 가능
-
----
-
-## 💥 Failure Modes(추정, 실험으로 확인할 것)
-
-1) **긴 gap(재등장)에서 wrong reactivation**
-   - 조건: gap↑, 다수 객체 근접, 유사 궤적
-   - 오류 유형: IDSW / false merge
-   - 점검: ORU가 “과거를 관측으로 재업데이트”하더라도, 관측 자체가 잘못 연결되면 오히려 확정 오류가 될 수 있음  [oai_citation:12‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
-
-2) **stationary object에서 track fragmentation**
-   - 조건: 정지/저속 + detector jitter
-   - OCR이 단기 occlusion/정지 객체에 도움을 주도록 설계되었다고 노트에 명시  [oai_citation:13‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-   - 점검: IOU 기반 복구가 오히려 다른 객체와 붙는지(군중/밀집에서)
-
-3) **비선형 motion 구간에서 cost 불안정**
-   - 조건: 급회전/급정지/방향 전환
-   - OCM이 “direction consistency를 cost matrix에 통합”  [oai_citation:14‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-   - 점검: 방향 일관성이 깨지는 스포츠 상황(컷인/턴)이 많은 경우 오히려 페널티가 될 수 있음
+  - 네 아이디어의 핵심인 **semantic state / belief(분포) 명시**는 이 노트 기준 Deep OC-SORT가 직접 제공하지 않음 → 너의 novelty(또는 추가 기여) 영역으로 남음
 
 ---
 
 ## 🧩 구현 체크리스트(차용 가능성)
 
-- ORU (location 재고정 모듈)
-  - 입력: (재활성화된 track, 최신 observation, gap 구간)
-  - 출력: virtual trajectory + 과거 KF 파라미터 re-update  [oai_citation:15‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - 구현 관문: “어떤 시점부터 과거를 되감아 업데이트하는가”, “virtual trajectory 생성 규칙”
+- CMC (View-shift 상황에서 입력 보정)
+  - 입력: 
+  - 출력:
+  - 구현 관문: 
 
-- OCM (association cost 항)
-  - 입력: track motion 방향/velocity, observation motion(프레임 간 변화)
-  - 출력: cost matrix 항(방향 일관성 반영)  [oai_citation:16‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - 구현 관문: direction consistency 정의(각도/내적/정규화), 노이즈 완화 방식(스무딩/클램핑)
+- DA (Appearance Cost에 새 임베딩의 기여도를 동적 alpha로 조정, 쓸때만 쓰기)
+  - 입력:
+  - 출력:
+  - 구현 관문: 
 
-- OCR (post-recovery)
-  - 입력: 1차 매칭에서 남은 unmatched tracks & detections
-  - 출력: IOU 기반 2차 연결(복구)  [oai_citation:17‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - 구현 관문: 수행 조건(언제만 실행?), IOU threshold, false merge 방지 게이트
+- AW (Appearance Cost에 트랙-박스 마진으로 가중치 부여)
+  - 입력: 
+  - 출력: 
+  - 구현 관문: 
 
 ---
 
