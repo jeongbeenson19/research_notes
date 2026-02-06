@@ -12,7 +12,7 @@ tags:
   - ViewShift
   - in-process
   - post
-status: 🟧 Reading
+status: 🟩 Done
 rating: 0
 date: 2026-02-03
 title: "Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification"
@@ -29,6 +29,7 @@ topics:
   - Pedestrian Tracking
   - Re-Identification
   - Computer Vision
+comment: Cost에 영향을 줄 feature 도입 시 DA와 AW의 방식으로 soft한 fusion 방식으로 주입할 가능성 발견
 ---
 
 ## **📄 Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification 개요**
@@ -146,7 +147,7 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 ---
 ## 🔁 내 연구와의 매핑 (Deep OC-SORT)
 
-- 파이프라인 위치: **in-process, post(camera motion compensation, DA, AW)
+- 파이프라인 위치: **in-process(camera motion compensation, DA, AW)
   - 기존 OC-SORT 요소에 카메라 모션 보정을 명시적으로 추가(`OpenCV.contrib.VidStab`)
   - tracklet 연결 시 dynamic apprearance로 외형 임베딩에 임계값 설정(좋은 프레임은 re-id 신호, 나쁜 프레임은 노이즈가 연결 결정을 흐리지 않게 모션 기반 연관을 보호)
 
@@ -214,31 +215,15 @@ Deep OC-SORT는 기존 고성능 모션 기반 추적 방법론에 외형 매칭
 ## 📌 Decision Log 영향(네 D1~D3 기준)
 
 - D1(Fusion):
-  - OC-SORT는 “학습 기반 feature injection”이 아니라 **cost 항 추가(OCM) + post heuristic(OCR)** 쪽에 가까움  [oai_citation:18‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - → 너의 설계에서도 “강주입(injection)보다 gating/score-fusion”이 안전하다는 근거로 사용 가능
+  - Deep OC-SORT는 “학습 기반 feature injection”이 아니라 **cost항에 embedding이 미치는 영향력 조절(DA) appearance와 motion/IOU의 비율 조절** 쪽에 가까움 
+  - → 너의 설계에서도 “강주입(injection)보다 score-fusion”이 안전하다는 근거로 사용 가능
 
-- D2(Location belief):
-  - ORU는 “belief를 퍼뜨려 유지”라기보다 “관측으로 재정렬(re-update)”이 핵심  [oai_citation:19‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
-  - → 네 belief-state를 하고 싶다면, OC-SORT 위에 **gap에 따른 공분산 증가/decay 규칙**을 추가하는 방향이 자연스러움
+- D2(Location belief):  
 
 - D3(Semantic):
-  - 본 노트 기준 semantic은 비어있음 → semantic을 넣는다면 **추가 기여(차별점)**로 남음
 
 ---
 
-## ✅ 다음 행동(OC-SORT에서 파생되는 다음 스텝)
-
-1) **사건 중심 평가 프로토콜로 ORU/OCR의 효과를 분리**
-   - reactivation 사건(gap-bucket)에서: ORU on/off, OCR on/off로 IDS/false merge 비교
-
-2) **네 모듈 MVP 정의**
-   - OC-SORT(모션/관측 중심) + 네 추가(appearance memory or belief rule) 중 “하나만” 얹어서 ablation 가능하게 설계
-
-3) **OC-SORT를 베이스라인으로 삼을지 결정**
-   - 스포츠/유니폼 유사 도메인이라면 “appearance 없는 강건성”이 장점일 수 있으니, 네 아이디어의 위치를
-     - (A) OC-SORT + belief/uncertainty 확장
-     - (B) OC-SORT + appearance memory(단, 업데이트 규칙 엄격)
-     중 하나로 좁히는 게 다음 단계
 ## **🔗 관련 링크**
 -  [[Object Tracking#^730413|MOT]]
 - [[Re-Identification]]

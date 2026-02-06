@@ -130,6 +130,21 @@ LSTR은 인코더-디코더 구조를 채택하여, 긴 과거 정보와 짧은 
 
 ---
 
+## 🔁 내 연구와의 매핑
+- 파이프라인 위치: pre / in-loop / post
+- State 대응
+  - location: (표현/업데이트/사용 위치)
+  - appearance: (사용 여부, 사용 위치)
+  - semantic: (종류, 사용 위치)
+  - uncertainty: (표현, miss/occlusion 시 동작)
+- 키워드 연결
+  - 주축:
+  - 부축:
+- 판정
+  - 유사:
+  - 차용:
+  - 충돌:
+
 ## **🔗 관련 링크**
 - [[Online Action Detection]]
 - [[Temporal Modeling]]

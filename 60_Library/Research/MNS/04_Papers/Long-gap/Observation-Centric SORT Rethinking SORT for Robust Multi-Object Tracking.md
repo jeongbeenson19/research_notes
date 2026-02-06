@@ -34,6 +34,7 @@ Keyword:
   - OCM
   - Occlusion Robusteness
   - Non-linear Motion Robustness
+comment: 칼만 필터를 사용할 경우 Non-linear Motion Robustness의 확보 목적으로 ORU, OCU 차용 고려할 수 있음
 ---
 
 ## **📄 Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking 개요**
@@ -296,7 +297,7 @@ OC-SORT는 전통적인 인코더/디코더 구조보다는 추적 파이프라�
 ### Object Tracking + Context
 
 ```dataview
-TABLE status, rating, year, Keyword
+TABLE status, rating, year, comment, Keyword
 FROM #OTnContext
 WHERE contains(topics, this.topics) AND file.name != this.file.name
 SORT year desc
