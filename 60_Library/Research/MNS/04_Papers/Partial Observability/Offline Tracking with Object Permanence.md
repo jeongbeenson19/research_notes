@@ -135,12 +135,3 @@ topics:
 - **코드**: (논문 원문 참조 필요)
 
 ---
-
-## **📚 Related Papers (Dataview)**
-
-```dataview
-TABLE status, rating, year
-FROM #DeepLearning
-WHERE contains(topics, this.topics) AND file.name != this.file.name
-SORT year desc
-```

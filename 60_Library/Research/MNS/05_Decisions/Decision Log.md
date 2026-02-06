@@ -1,6 +1,10 @@
 ---
 title: 결정 로그
-tags: [decisions, design, ablation]
+tags:
+  - decisions
+  - design
+  - ablation
+topics:
 ---
 
 # 사용 규칙
@@ -32,3 +36,31 @@ tags: [decisions, design, ablation]
 - 근거 논문:
 - 반례 논문:
 - 구현 메모(추출 방법 / 비용 / 실패 모드):
+
+```dataview
+TABLE status, comment, Keyword
+FROM #Long-gap
+WHERE file.name != this.file.name
+SORT year
+```
+
+```dataview
+TABLE status, comment, Keyword
+FROM #PartialObservability
+WHERE file.name != this.file.name
+SORT year
+```
+
+```dataview
+TABLE status, comment, Keyword
+FROM #OTnContext
+WHERE file.name != this.file.name
+SORT year
+```
+
+```dataview
+TABLE status, comment, Keyword
+FROM #ViewShift
+WHERE file.name != this.file.name
+SORT year
+```

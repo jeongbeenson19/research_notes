@@ -30,6 +30,13 @@ topics:
   - Re-Identification
   - Computer Vision
 comment: Cost에 영향을 줄 feature 도입 시 DA와 AW의 방식으로 soft한 fusion 방식으로 주입할 가능성 발견
+Keyword:
+  - DA
+  - AW
+  - CMC
+  - Appearance Cost
+  - Adaptive Fusion
+  - View-shift Robustness
 ---
 
 ## **📄 Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification 개요**

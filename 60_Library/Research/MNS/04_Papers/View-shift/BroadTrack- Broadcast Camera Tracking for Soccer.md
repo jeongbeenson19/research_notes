@@ -9,7 +9,7 @@ tags:
   - CameraTracking
   - Soccer
   - ViewShift
-status: 🟩 Done
+status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "BroadTrack: Broadcast Camera Tracking for Soccer"

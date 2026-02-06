@@ -8,7 +8,7 @@ tags:
   - MultiObjectTracking
   - CameraMotionCompensation
   - ViewShift
-status: 🟩 Done
+status: 🟧 Reading
 rating: 0
 date: 2026-02-03
 title: "UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation"
