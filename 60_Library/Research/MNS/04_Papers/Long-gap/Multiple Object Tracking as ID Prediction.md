@@ -26,9 +26,9 @@ topics:
 
 ## **📄 Multiple Object Tracking as ID Prediction 개요**
 
-- **발표 논문**: Multiple Object Tracking as ID Prediction by Ruopeng Gao, Yijun Zhang, Limin Wang (CVPR 2025)[1][2][3]
+- **발표 논문**: Multiple Object Tracking as ID Prediction by Ruopeng Gao, Yijun Zhang, Limin Wang (CVPR 2025)
 - **핵심 아이디어**:
-    기존의 [[다중 객체 추적 (MOT, Multiple Object Tracking)]] 방법론들이 수작업으로 설계된 휴리스틱(handcrafted heuristics)에 의존하여 궤적 유지 및 비용 행렬 계산을 수행하는 한계를 극복하고자 한다[1][4]. 이 논문은 MOT를 [[In-context ID Prediction]] 문제로 재정의하여, 객체 탐지(object detection)와 연관(association)을 분리하고, 객체 연관을 [[End-to-end]] 학습 가능한 태스크로 전환하는 새로운 관점을 제안한다[1][2][4]. 이는 현재 탐지된 객체에 대해 [[ID Decoder]]와 [[Learnable ID Dictionary]]를 활용하여 직접 ID 레이블을 디코딩함으로써, 보지 못한 궤적(unseen trajectories)에도 일반화될 수 있도록 한다[1][2].
+    기존의 다중 객체 추적 (MOT, Multiple Object Tracking) 방법론들이 수작업으로 설계된 휴리스틱(handcrafted heuristics)에 의존하여 궤적 유지 및 비용 행렬 계산을 수행하는 한계를 극복하고자 한다. 이 논문은 MOT를 In-context ID Prediction 문제로 재정의하여, 객체 탐지(object detection)와 연관(association)을 분리하고, 객체 연관을 End-to-end 학습 가능한 태스크로 전환하는 새로운 관점을 제안한다. 이는 현재 탐지된 객체에 대해 ID Decoder와 Learnable ID Dictionary를 활용하여 직접 ID 레이블을 디코딩함으로써, 보지 못한 궤적(unseen trajectories)에도 일반화될 수 있도록 한다.
 - **주요 성과**:
     - MOT를 [[In-context ID Prediction]]으로 단순화하여 [[End-to-end]] 학습을 가능하게 함[1][2].
     - 기존 휴리스틱 기반 방법론의 유연성 및 최적 추적 능력 학습의 한계를 해결[1].
