@@ -148,7 +148,7 @@ topics:
 ## **📚 Related Papers (Dataview)**
 
 ```dataview
-TABLE year, Keyword
+TABLE year, Keyword, comment
 FROM #Long-gap
 WHERE contains(topics, this.topics) AND file.name != this.file.name
 SORT year desc
