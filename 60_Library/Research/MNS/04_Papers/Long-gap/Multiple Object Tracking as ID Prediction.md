@@ -22,6 +22,8 @@ topics:
   - ID Prediction
   - Computer Vision
   - Deep Learning
+Keyword:
+comment:
 ---
 
 ## **📄 Multiple Object Tracking as ID Prediction 개요**
@@ -134,6 +136,117 @@ topics:
 
 ---
 
+## 🔁 내 연구와의 매핑 (OC-SORT)
+
+- 파이프라인 위치: **in-loop(association) + post(heuristic recovery)**
+  - KF 예측 + Hungarian data association을 기본으로 하고, ORU/OCM/OCR을 **연관(association) 과정에 통합**함  [oai_citation:0‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - OCR은 “주 연관성 단계 이후” IOU 기반 복구 휴리스틱으로 **후처리(post 성격)** 가 강함  [oai_citation:1‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+
+### State 대응
+
+- location
+  - **표현(Representation)**: KF 기반 객체 상태(추정/예측) + 관측치 기반 재업데이트
+  - **핵심 메커니즘(ORU)**: 트랙이 손실→재활성화될 때, 과거의 추정치를 관측치 기반으로 대체(가상 궤적 생성 후 과거 KF 파라미터 재업데이트)  [oai_citation:2‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - **내 아이디어와의 대응**:
+    - “out-of-view 동안 location belief 유지”에서 **belief 업데이트를 ‘관측 재주입’으로 안정화**하는 구현 레퍼런스로 사용 가능
+    - 단, 이 노트 기준으로는 **분포(belief) 명시보다는 ‘관측으로 재고정’**에 가까움(uncertainty 설계는 별도 보강 필요)
+
+- appearance
+  - **사용 여부**: (이 노트 기준) **명시적 appearance/ReID 사용 언급 없음**
+  - **내 아이디어와의 대응**:
+    - 너의 object-state memory(appearance bank/prototype)와는 축이 다름 → “motion/observation-centric만으로 어디까지 버티는지”를 보는 **비교 기준(baseline/ablation 축)**로 적합  
+    - 스포츠(유니폼 유사)처럼 appearance가 약할 때는 OC-SORT류 접근이 더 현실적일 수 있음
+
+- semantic
+  - **사용 여부**: (이 노트 기준) **명시적 semantic state 사용 언급 없음**
+  - **내 아이디어와의 대응**:
+    - semantic을 넣는다면 OC-SORT의 cost 항(OCM) 또는 recovery 단계(OCR)에 “soft prior”로 붙이는 형태가 자연스럽지만, 본 논문(노트) 자체의 핵심은 아님
+
+- uncertainty
+  - **표현 후보**: KF 공분산/게이팅/occlusion 시 업데이트 정책이 사실상 uncertainty 처리에 해당 가능(다만 노트에 상세 수식은 없음)
+  - **내 아이디어와의 대응**:
+    - 네가 목표로 하는 belief-state(분포) 관점에서는 “공분산 증가/감쇠, update freeze/decay” 규칙을 **명시적으로 추가 설계**해야 함
+    - ORU는 “불확실성 누적”을 줄이기 위해 “관측으로 과거를 재정렬”하는 쪽에 가까움  [oai_citation:3‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+
+### 키워드 연결(주축 1 + 부축 1)
+
+- 주축: **out-of-view reactivation / long-gap 대응**
+  - ORU가 “재활성화 시 과거 추정 오차 수정”을 명시  [oai_citation:4‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+- 부축: **visibility-aware(occlusion robustness)**
+  - 논문(노트)이 폐색(occlusion) 강건성을 핵심 목표로 둠  [oai_citation:5‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+- (참고) context gating은 “장면/관계”보다는 **모션 일관성(OCM) + IOU 복구(OCR)**로 후보를 조절하는 형태에 가까움  [oai_citation:6‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+
+### 판정(1~2분 결론)
+
+- 유사:
+  - “관측 단절/재등장” 상황에서 **재활성화 안정화**를 직접 겨냥(ORU/OCR)  [oai_citation:7‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+- 차용:
+  - **ORU(재활성화 시 관측 기반 re-update)** 는 네 모듈의 “location state 재고정” 파트에 그대로 차용 후보  [oai_citation:8‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - **OCM(방향 일관성 cost 항)** 은 네 association cost에 “motion-based context prior”로 붙이기 쉬움  [oai_citation:9‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+- 충돌/빈칸:
+  - 네 아이디어의 핵심인 **appearance memory / semantic state / belief(분포) 명시**는 이 노트 기준 OC-SORT가 직접 제공하지 않음 → 너의 novelty(또는 추가 기여) 영역으로 남음
+
+---
+
+## 🧪 Assumptions → 테스트 케이스(재현 조건으로)
+
+- 가정 A: KF + Hungarian 기반의 온라인 추적 프레임워크 유지  [oai_citation:10‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - 깨지는 상황: 비선형/급가속 + 긴 gap에서 모션만으로 재연결 어려움(이때 ORU/OCM이 얼마나 버티는지)
+- 가정 B: off-the-shelf detections 사용(학습 없는 필터링 기반)  [oai_citation:11‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - 깨지는 상황: detector miss가 잦은 도메인(저조도/블러/군중)에서 OCR이 “잘못된 IOU 복구”로 false merge 유발 가능
+
+---
+
+## 💥 Failure Modes(추정, 실험으로 확인할 것)
+
+1) **긴 gap(재등장)에서 wrong reactivation**
+   - 조건: gap↑, 다수 객체 근접, 유사 궤적
+   - 오류 유형: IDSW / false merge
+   - 점검: ORU가 “과거를 관측으로 재업데이트”하더라도, 관측 자체가 잘못 연결되면 오히려 확정 오류가 될 수 있음  [oai_citation:12‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)
+
+2) **stationary object에서 track fragmentation**
+   - 조건: 정지/저속 + detector jitter
+   - OCR이 단기 occlusion/정지 객체에 도움을 주도록 설계되었다고 노트에 명시  [oai_citation:13‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+   - 점검: IOU 기반 복구가 오히려 다른 객체와 붙는지(군중/밀집에서)
+
+3) **비선형 motion 구간에서 cost 불안정**
+   - 조건: 급회전/급정지/방향 전환
+   - OCM이 “direction consistency를 cost matrix에 통합”  [oai_citation:14‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+   - 점검: 방향 일관성이 깨지는 스포츠 상황(컷인/턴)이 많은 경우 오히려 페널티가 될 수 있음
+
+---
+
+## 🧩 구현 체크리스트(차용 가능성)
+
+- ORU (location 재고정 모듈)
+  - 입력: (재활성화된 track, 최신 observation, gap 구간)
+  - 출력: virtual trajectory + 과거 KF 파라미터 re-update  [oai_citation:15‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - 구현 관문: “어떤 시점부터 과거를 되감아 업데이트하는가”, “virtual trajectory 생성 규칙”
+
+- OCM (association cost 항)
+  - 입력: track motion 방향/velocity, observation motion(프레임 간 변화)
+  - 출력: cost matrix 항(방향 일관성 반영)  [oai_citation:16‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - 구현 관문: direction consistency 정의(각도/내적/정규화), 노이즈 완화 방식(스무딩/클램핑)
+
+- OCR (post-recovery)
+  - 입력: 1차 매칭에서 남은 unmatched tracks & detections
+  - 출력: IOU 기반 2차 연결(복구)  [oai_citation:17‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - 구현 관문: 수행 조건(언제만 실행?), IOU threshold, false merge 방지 게이트
+
+---
+
+## 📌 Decision Log 영향(네 D1~D3 기준)
+
+- D1(Fusion):
+  - OC-SORT는 “학습 기반 feature injection”이 아니라 **cost 항 추가(OCM) + post heuristic(OCR)** 쪽에 가까움  [oai_citation:18‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - → 너의 설계에서도 “강주입(injection)보다 gating/score-fusion”이 안전하다는 근거로 사용 가능
+
+- D2(Location belief):
+  - ORU는 “belief를 퍼뜨려 유지”라기보다 “관측으로 재정렬(re-update)”이 핵심  [oai_citation:19‡Observation-Centric SORT Rethinking SORT for Robust Multi-Object Tracking.md](sediment://file_000000007268720693a5383ae95a334b)  
+  - → 네 belief-state를 하고 싶다면, OC-SORT 위에 **gap에 따른 공분산 증가/decay 규칙**을 추가하는 방향이 자연스러움
+
+- D3(Semantic):
+  - 본 노트 기준 semantic은 비어있음 → semantic을 넣는다면 **추가 기여(차별점)**로 남음
 ## **🔗 관련 링크**
 - [[Multiple Object Tracking]]
 - [[DETR]]
