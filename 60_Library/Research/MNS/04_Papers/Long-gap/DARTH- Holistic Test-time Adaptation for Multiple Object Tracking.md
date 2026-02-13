@@ -45,10 +45,10 @@ topics:
 DARTH는 MOT의 다면적인 특성을 다루는 전체론적 테스트 시간 적응 프레임워크이다. 이는 객체 탐지 및 인스턴스 연관(instance association) 구성 요소를 모두 적응시킨다. [2, 3]
 
 ### **0. 기호/차원**
-- $ \theta $: 학생 모델(student model)의 가중치 [3]
-- $ \xi $: 교사 모델(teacher model)의 가중치 [3]
-- $ \tau $: EMA(Exponential Moving Average) 업데이트의 모멘텀 [3]
-- $ \phi_T, \phi_S, \phi_C $: 이미지 변환(image transformations) [3]
+- $\theta$: 학생 모델(student model)의 가중치 [3]
+- $\xi$: 교사 모델(teacher model)의 가중치 [3]
+- $\tau$: EMA(Exponential Moving Average) 업데이트의 모멘텀 [3]
+- $\phi_T, \phi_S, \phi_C$: 이미지 변환(image transformations) [3]
 
 ### **1. Detection Consistency Formulation**
 - **구성**: DARTH는 객체 탐지를 자기 지도(self-supervised) 방식으로 적응시키기 위한 탐지 일관성 공식(detection consistency formulation)을 제안한다. [3, 4]
@@ -60,7 +60,7 @@ DARTH는 MOT의 다면적인 특성을 다루는 전체론적 테스트 시간 �
 
 ### **3. 주요 수식 요약**
 - **교사 모델 업데이트**:
-  - $ \xi \leftarrow \tau\xi + (1 - \tau)\theta $ [3]
+  - $\xi \leftarrow \tau\xi + (1 - \tau)\theta$ [3]
 
 ---
 
