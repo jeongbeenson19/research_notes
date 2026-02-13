@@ -35,7 +35,7 @@ topics:
 
 - **발표 논문**: Segment Anything Meets Point Tracking (SAM-PT) by Frano Rajič et al., arXiv 2023.[1][2][3]
 - **핵심 아이디어**:
-    [[Segment Anything Model]](SAM)의 강력한 제로샷(zero-shot) 이미지 분할 능력을 활용하여 비디오 분할(video segmentation)로 확장하는 새로운 방법론인 [[SAM-PT]]를 제안한다.[1][2][4][3] 기존 비디오 분할 방법론들이 마스크 주석(mask annotation) 및 전파(propagation)에 초점을 맞추는 것과 달리, SAM-PT는 **점 중심(point-centric)**의 상호작용 비디오 분할을 위해 [[장기 점 추적(long-term point tracking)]]을 활용한다.[1][2][5][4][3] 이는 객체 의미론(object semantics)에 구애받지 않고 지역 구조 정보(local structure information)를 활용하기 위해 점 전파(point propagation)를 사용하는 독특한 접근 방식이다.[1][2][4]
+    [[Segment Anything Model]](SAM)의 강력한 제로샷(zero-shot) 이미지 분할 능력을 활용하여 비디오 분할(video segmentation)로 확장하는 새로운 방법론인 [[SAM-PT]]를 제안한다.[1][2][4][3] 기존 비디오 분할 방법론들이 마스크 주석(mask annotation) 및 전파(propagation)에 초점을 맞추는 것과 달리, SAM-PT는 **점 중심(point-centric)** 의 상호작용 비디오 분할을 위해 [[장기 점 추적(long-term point tracking)]]을 활용한다.[1][2][5][4][3] 이는 객체 의미론(object semantics)에 구애받지 않고 지역 구조 정보(local structure information)를 활용하기 위해 점 전파(point propagation)를 사용하는 독특한 접근 방식이다.[1][2][4]
 - **주요 성과**:
     - Davis, YouTube-VOS, BDD100K와 같은 인기 있는 비디오 객체 분할(Video Object Segmentation) 및 다중 객체 분할 추적(Multi-Object Segmentation Tracking) 벤치마크에서 기존 SOTA(State-of-the-Art) 방법론들과 비교하여 더 나은 제로샷 성능과 효율적인 상호작용을 제공한다.[1][2][4]
     - 특히, 비디오 분할 데이터에 대한 훈련 없이도 강력한 제로샷 성능을 달성한다.[6][2][7][8]

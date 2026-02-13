@@ -55,7 +55,7 @@ topics:
 
 ### **3. 주요 수식 요약**
 - **내부 처리 루프**:
-  - $ \text{Adaptive blending of pixel-space information with anticipations} $
+  - $\text{Adaptive blending of pixel-space information with anticipations}$
 
 ---
 
