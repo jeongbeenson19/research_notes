@@ -1,12 +1,3 @@
----
-tags:
-  - DeepLearning
-  - SequenceModeling
-  - HardwareOptimization
-  - Mamba
-aliases:
-  - 하드웨어 인지 병렬 알고리즘
----
 
 # Hardware-aware Parallel Algorithm (하드웨어 인지 병렬 알고리즘)
 
