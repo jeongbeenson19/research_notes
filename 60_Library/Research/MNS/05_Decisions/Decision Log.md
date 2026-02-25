@@ -37,6 +37,8 @@ topics:
 - 반례 논문:
 - 구현 메모(추출 방법 / 비용 / 실패 모드):
 
+
+## Long-gap
 ```dataview
 TABLE status, comment, Keyword
 FROM #Long-gap
@@ -44,6 +46,7 @@ WHERE file.name != this.file.name
 SORT year
 ```
 
+## Partial Observability
 ```dataview
 TABLE status, comment, Keyword
 FROM #PartialObservability
@@ -51,6 +54,7 @@ WHERE file.name != this.file.name
 SORT year
 ```
 
+## OT+Context
 ```dataview
 TABLE status, comment, Keyword
 FROM #OTnContext
@@ -58,6 +62,7 @@ WHERE file.name != this.file.name
 SORT year
 ```
 
+## View-shift
 ```dataview
 TABLE status, comment, Keyword
 FROM #ViewShift
