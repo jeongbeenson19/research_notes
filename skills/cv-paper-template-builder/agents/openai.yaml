@@ -1,4 +1,4 @@
 interface:
   display_name: "CV Paper Template Builder"
-  short_description: "Create CV paper note folders with Obsidian templates"
-  default_prompt: "Use $cv-paper-template-builder to create Obsidian CV paper note files from a title."
+  short_description: "Create one filled CV paper Obsidian note"
+  default_prompt: "Use $cv-paper-template-builder to create one fully filled Obsidian CV paper note from a title."
