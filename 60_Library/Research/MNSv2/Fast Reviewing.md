@@ -12,5 +12,8 @@
 
 ###  ReWind: Understanding Long Videos with Instructed Learnable Memory
 
-> VLM (VQA+TG)
-> 2-stage 구조 - 동적 학습 메모리(read-perceive-write cycle)를 이용한 시각 정보 저장 및 업데이트 + adaptive frame selection mechanism을 이용한 key mome
+> VLM (VQA + Temporal Grounding)
+> 2-stage 구조 - 동적 학습 메모리(read-perceive-write cycle)를 이용한 시각 정보 저장 및 업데이트 + adaptive frame selection mechanism을 이용한 key moment 규명
+
+**핵심 맥락은 압축하여 메모리 뱅크(M)에 저장**하여 긴 비디오를 효율적으로 다루고, **상세 정보는 특징 버퍼에 남겨두어** 필요시 다시 꺼내 쓸 수 있도록 하는 이중 전략을 사용
+
