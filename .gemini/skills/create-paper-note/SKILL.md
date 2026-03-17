@@ -1,11 +1,11 @@
 ---
 name: create-paper-note
-description: MNS(Workflow).md'에 정의된 템플릿에 따라, 논문 제목을 입력받아 '60_Library/Research/MNS/04_Papers' 디렉토리에 요약 노트를 생성합니다.
+description: MNS(Workflow).md'에 정의된 템플릿에 따라, 논문 제목을 입력받아 '60_Library/Research/MNSv2/Reference' 디렉토리에 요약 노트를 생성합니다.
 ---
 
 # Paper Note Creation Skill
 
-This skill automates the creation of a new paper summary note in the `60_Library/Research/MNS/04_Papers/` directory, based on the template found in `60_Library/Research/MNS/MNS(Workflow).md`.
+This skill automates the creation of a new paper summary note in the `60_Library/Research/MNSv2/Reference/` directory, based on the template found in `60_Library/Research/MNS/MNS(Workflow).md`.
 
 ## Workflow
 
@@ -14,7 +14,7 @@ This skill automates the creation of a new paper summary note in the `60_Library
     - **Query**: Use a query like `"[paper_title]" paper arxiv`.
 3.  **Construct File Content**: Use the paper details to fill out the template below. The "Extract" and "Takeaway" sections should be left as placeholders for the user to fill in, as they require in-depth analysis.
 4.  **Determine Filename**: The filename should be the paper's official title.
-5.  **Create File**: Use the `write_file` tool to create the new markdown file in the `40_Papers/` directory.
+5.  **Create File**: Use the `write_file` tool to create the new markdown file in the `60_Library/Research/MNSv2/Reference/` directory.
 
 ## Note Template
 
